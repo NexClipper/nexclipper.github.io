@@ -83,11 +83,6 @@ module.exports = {
       // Optional fields.
       anonymizeIP: true, // Should IPs be anonymized?
     },
-    gtag: {
-      trackingID: 'UA-122075277-7',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
   },
   presets: [
     [
@@ -114,7 +109,6 @@ module.exports = {
   plugins: [
     // Basic usage.
     '@docusaurus/plugin-google-analytics',
-    '@docusaurus/plugin-google-gtag',
     // With options object (babel style)
     [
       '@docusaurus/plugin-sitemap',
