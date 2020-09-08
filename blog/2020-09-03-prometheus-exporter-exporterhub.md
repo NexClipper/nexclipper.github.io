@@ -12,6 +12,8 @@ tags: [Prometheus, Exporter]
 
 오늘은 Prometheus exporter와 관련된 내용을 다뤄보려고 합니다.
 
+<!--truncate-->
+
 ### Prometheus ecosystem components
 
 프로메테우스는 기본적으로 애플리케이션 또는 써드-파티 시스템(서비스)의 메트릭을 계측(instrumentation)하게 되는데 일반적으로는 타겟(target) 엔드포인트를 통해 스크래핑(scrape)하게 됩니다.
