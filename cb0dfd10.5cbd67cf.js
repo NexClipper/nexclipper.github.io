@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[96],{151:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"open-invention-network","name":"open invention network","count":1,"permalink":"/blog/tags/open-invention-network"}')}}]);

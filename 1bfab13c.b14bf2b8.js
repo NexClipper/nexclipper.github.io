@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{69:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"k-8-s-forum-seoul-2019","name":"k8s forum seoul 2019","count":1,"permalink":"/blog/tags/k-8-s-forum-seoul-2019"}')}}]);
