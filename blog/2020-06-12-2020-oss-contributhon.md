@@ -14,7 +14,7 @@ NexClipper 가 '2020 오픈소스 컨트리뷰톤'에 참가합니다.
 
 컨트리뷰톤(Contributhon)은 '오픈소스 기여(contribute)'와 '마라톤(marathon)'의 합성어로  개발자의 가이드와 함께 참여ㆍ공유ㆍ개방ㆍ협업의 오픈소스 프로젝트를 함께하고, 오픈소스 개발에 대한 진입장벽을 뚫어 다양한 기여(contribution)를 직접 경험하는 프로그램입니다.
 
- 
+<!--truncate-->
 
 ![](images/mc_pc.jpg)
 

@@ -11,6 +11,8 @@ tags: [NexClipper, K8S Forum Seoul 2019]
 
 On Dec. 09, 2019, we exhibited at K8S Forum Seoul 2019 event held at Yongsan Dragon City.
 
+<!--truncate-->
+
 ![](images/1-e1576226034564.jpeg)
 
 We took this opportunity as a Bronze Sponsor of the event, and had 500+ attendees visited our booth.

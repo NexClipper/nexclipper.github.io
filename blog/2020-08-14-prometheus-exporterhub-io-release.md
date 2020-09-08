@@ -9,11 +9,13 @@ tags: [Prometheus, Exporter]
 
 ![](images/ExporterHub.io_.png)
 
- 
+
 
 NexCloud announced the release of "Prometheus Exporter Manager", which is a part of the NexClipper that is still under development, on "[exporterhub.io](https://exporterhub.io/)" and [Github](https://github.com/NexClipper/exporterhub.io/).
 
 ExporterHub.io is not just a list of selected Exporters, but expected to help Prometheus users with a curation of information scattered all over the web, such as installation guides, alert rule configurations, and dashboard configurations. A variety of features will be added to enhance personalization and to work seamlessly with the planned "NexClipper Cloud", a cloud native monitoring as a service.
+
+<!--truncate-->
 
 * * *
 
