@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{68:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cloud-native","name":"cloudnative","count":1,"permalink":"/blog/tags/cloud-native"}')}}]);
