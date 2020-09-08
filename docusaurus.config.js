@@ -1,12 +1,12 @@
 module.exports = {
   title: 'NexClipper',
   tagline: 'Cloud Native infrastructure in an easier and more stable way.',
-  url: 'https://docs.nexclipper.io',
+  url: 'https://nexclipper.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'nexclipper', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'endiliey.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'NexClipper',
