@@ -11,8 +11,8 @@ module.exports = {
     navbar: {
       title: 'NexClipper',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'NexClipper Logo',
+        src: 'img/NexClipper_200.svg',
       },
       items: [
         {
