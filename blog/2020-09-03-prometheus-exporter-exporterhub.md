@@ -4,6 +4,7 @@ author: Jinwoong Kim
 author_title: NexClipper
 author_url: https://github.com/ddiiwoong
 author_image_url: https://avatars1.githubusercontent.com/u/37430952?v=4
+description: "프로메테우스 오픈소스의 필수 구성요소인 클라이언트 라이브러리, 익스포터에 대해서 이야기 하고 현재 개발 중인 [ExporterHub.io](http://exporterhub.io) 과 향후 NexClipper의 로드맵도 같이 설명합니다."
 tags: [Prometheus, Exporter]
 ---
 
@@ -12,8 +13,6 @@ tags: [Prometheus, Exporter]
 오늘은 Prometheus exporter와 관련된 내용을 다뤄보려고 합니다.
 
 ### Prometheus ecosystem components
-
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/06709c06-a26c-459f-934f-3d0cc1c3426d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200902%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200902T133928Z&X-Amz-Expires=86400&X-Amz-Signature=cb0ed6dd52cfa689fc9e8f6c9f0ee5dd03edec9d1563f16ca64abdfa72b1ba0a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
 프로메테우스는 기본적으로 애플리케이션 또는 써드-파티 시스템(서비스)의 메트릭을 계측(instrumentation)하게 되는데 일반적으로는 타겟(target) 엔드포인트를 통해 스크래핑(scrape)하게 됩니다.
 
