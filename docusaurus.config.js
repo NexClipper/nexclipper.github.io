@@ -101,4 +101,39 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    // Basic usage.
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        themeConfig: {
+          googleAnalytics: {
+            trackingID: 'UA-122075277-7',
+            // Optional fields.
+            anonymizeIP: true, // Should IPs be anonymized?
+          },
+        },
+      },
+    ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        themeConfig: {
+          gtag: {
+            trackingID: 'UA-122075277-7',
+            // Optional fields.
+            anonymizeIP: true, // Should IPs be anonymized?
+          },
+        },
+      }
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        cacheTime: 600 * 1000, // 600 sec - cache purge period
+        changefreq: 'weekly',
+        priority: 0.5,
+      },
+    ],
+  ],
 };
