@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Cloud Native infrastructure in an easier and more stable way.',
   url: 'https://nexclipper.github.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nexclipper', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
