@@ -1,4 +1,0 @@
----
-id: test
----
-Lorem ipsum
