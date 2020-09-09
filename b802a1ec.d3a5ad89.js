@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[84],{139:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"ai-analytics","name":"ai analytics","count":1,"permalink":"/blog/tags/ai-analytics"}')}}]);
