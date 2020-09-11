@@ -49,6 +49,15 @@ NexClipper는 기본적으로 Linux 환경에서 동작하도록 되어 있습�
 2. Local Kubernetes
    * Docker Desktop, Minikube, K3s, MicroK8s 등 로컬에서 실행하는 경우
 
+bash 또는 zsh을 실행할 수 있는 환경에서 현재 연결된 클러스트를 확인하는 다음 명령을 실행합니다.
+docker-descktop으로 kubernetes 환경을 구성했다면 다음과 유사한 결과를 얻을 수 있습니다. 
+```bash
+$ kubectl cluster-info
+Kubernetes master is running at https://kubernetes.docker.internal:6443
+KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+```
+
 #### 1. Remote Kubernetes
 
 nexclipper.io로 접속합니다.
@@ -56,4 +65,15 @@ nexclipper.io로 접속합니다.
 Getting Started를 클릭합니다.
 
 console.nexclipper.io로 이동합니다.
+
+
+#### 2. Local Kubernetes
+
+
+nexclipper.io로 접속합니다.
+
+Getting Started를 클릭합니다.
+
+console.nexclipper.io로 이동합니다.
+
 
