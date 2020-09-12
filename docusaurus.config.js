@@ -9,6 +9,11 @@ module.exports = {
   projectName: 'docs', // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
+    algolia: {
+      apiKey: 'dc6d5a8551a50e2c81b733ec0ee1305f',
+      indexName: 'nexclipper',
+      searchParameters: {}, // Optional (if provided by Algolia)
+    },
     navbar: {
       title: 'NexClipper',
       logo: {
