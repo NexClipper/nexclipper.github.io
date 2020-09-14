@@ -69,8 +69,6 @@ KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/
 ---
 Landing Page로 이동합니다.
 
-![img]()
-
 ---
 
 [https://console.nexclipper.io/login](https://console.nexclipper.io/login) 로 이동합니다.
