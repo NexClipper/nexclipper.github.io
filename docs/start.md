@@ -7,7 +7,6 @@ keywords:
   - guide
   - installation
   - setup
-  - 
   - getting started
   - nexclipper
 ---

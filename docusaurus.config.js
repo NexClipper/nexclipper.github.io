@@ -31,6 +31,11 @@ module.exports = {
         {
           href: 'https://github.com/NexClipper/NexClipper',
           label: 'GitHub',
+          position: 'left',
+        },
+        {
+          href: 'https://console.nexclipper.io/login',
+          label: 'Service',
           position: 'right',
         },
       ],
