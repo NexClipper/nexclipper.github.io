@@ -31,7 +31,6 @@ NexClipper Agent는 Kubernetes 기준 *1.15.12* 이상에서 테스트 되었습
 ### Minimum Requirements
 
 NexClipper는 기본적으로 Linux 환경에서 동작하도록 되어 있습니다.   
-Target Kubernetes Cluster가 인터넷으로 Access가 가능해야 합니다.   
 
 * Operating Systems : Linux(WSL포함), MacOS 10.14+
 * Software
@@ -39,6 +38,7 @@ Target Kubernetes Cluster가 인터넷으로 Access가 가능해야 합니다.
   * curl
   * ssh-keygen
 * Target Kubernetes Cluster : 1.15.12 이상
+* Firewall : Outbound (Destination : console.nexclipper.io, Port: 80,443,8080,8090)
 
 
 ### Installation
