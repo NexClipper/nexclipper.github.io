@@ -165,6 +165,13 @@ prometheus-operator-57859b8b59-ns7g2   2/2     Running   0          61m
 * Task Status
   * 현재 개발중인 기능으로 NexClipper에서 수행되는 모든 Job과 Task 상태를 보여줍니다.
 * Zone Status
-  * Zone의 상태 정보로 현재는 Agent가 배포된 Node 대수와 Grafana Endpoint(NordPort)를 보여줍니다. 
+  * Zone의 상태 정보로 현재는 Agent가 배포된 Node 대수와 Grafana Endpoint(NodePort)를 보여줍니다. 
 
 ![img](../static/img/nc-detail.png)
+
+Zone Status에 표기된 Grafana Endpoint로 접속하면 프로비저닝된 Grafana 접속 정보 확인이 가능힙니다.   
+기본 설정된 계정 정보는 아이디, 패스워드 동일하게 `admin:admin`으로 설정되어 있습니다.
+
+![img](../static/img/nc-grafana.png)
+
+
