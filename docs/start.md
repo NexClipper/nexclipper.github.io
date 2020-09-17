@@ -44,7 +44,6 @@ NexClipper는 기본적으로 Linux 환경에서 동작하도록 되어 있습�
   * ssh-keygen
 * Target Kubernetes Cluster : 1.15.12 이상
 * Firewall : Outbound (Destination : console.nexclipper.io, Port: 80,443,8080,8090)
-
 ---
 
 ### Installation
@@ -64,6 +63,11 @@ Kubernetes master is running at https://kubernetes.docker.internal:6443
 KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 
 ```
+
+:::caution
+기존 운영중인 프로메테우스 오퍼레이터(Operator)와 중복 설치될 경우에 문제가 발생할 수 있습니다.
+:::
+
 ---
 
 ### Remote Kubernetes
@@ -181,5 +185,3 @@ Zone Status에 표기된 Grafana Endpoint로 접속하면 프로비저닝된 Gra
 
 ![img](../static/img/nc-grafana.png)
 
-
-### Local Kubernetes
