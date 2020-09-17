@@ -70,7 +70,7 @@ KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/
 
 ---
 
-### Remote Kubernetes
+### Kubernetes
 
 [https://nexclipper.io](https://nexclipper.io) 로 접속하여 `TRY` 메뉴를 클릭합니다.
 

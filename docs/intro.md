@@ -3,6 +3,12 @@ id: intro
 title: Introduction to NexClipper
 sidebar_label: Introduction to NexClipper
 slug: /
+hide_title: true
+keywords:
+  - mission
+  - vision
+  - product
+  - nexclipper
 ---
 
 ## NexClipper
