@@ -118,7 +118,7 @@ Zone Name을 입력합니다. Zone Name은 리스트에 보여지는 값으로 �
 생성된 스크립트를 zsh, bash 구동이 가능한 Bastion 또는 Local에서 실행합니다.
 
 ```sh
-curl -sL gg.gg/provbee | K3S_SET=N K_API_KEY="370c659d7cd948f78eee3a0581a099ba" K_PLATFORM="kubernetes" K_MANAGER_URL="https://console.nexclipper.io:8090" K_ZONE_ID="76" bash
+curl -sL gg.gg/provbee | K3S_SET=N K_API_KEY="370c659asldfjeee3a0581a099ba" K_PLATFORM="kubernetes" K_MANAGER_URL="https://console.nexclipper.io:8090" K_ZONE_ID="76" bash
 ```
 
 `Continue`를 눌러 다음 단계로 이동합니다. 
