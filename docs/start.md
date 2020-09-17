@@ -66,7 +66,7 @@ KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/
 ```
 ---
 
-#### 1. Remote Kubernetes
+### Remote Kubernetes
 
 [https://nexclipper.io](https://nexclipper.io) 로 접속하여 `TRY` 메뉴를 클릭합니다.
 
@@ -132,7 +132,7 @@ klevr-agent-lcp2j   1/1     Running   0          59m
 provbee             1/1     Running   0          59m
 ```
 
-nex-mon-pro 네임스페이스에는 프로메테우스 에코시스템이 설치됩니다.
+`monitoring` 네임스페이스에는 프로메테우스 에코시스템이 설치됩니다.
 
 * prometheus-operator
 * prometheus
@@ -142,7 +142,7 @@ nex-mon-pro 네임스페이스에는 프로메테우스 에코시스템이 설�
 * grafana
 
 ```sh
-> kubectl get pod -n nex-mon-pro
+> kubectl get pod -n monitoring
 NAME                                   READY   STATUS    RESTARTS   AGE
 alertmanager-main-0                    2/2     Running   0          61m
 alertmanager-main-1                    2/2     Running   0          61m
@@ -182,3 +182,4 @@ Zone Status에 표기된 Grafana Endpoint로 접속하면 프로비저닝된 Gra
 ![img](../static/img/nc-grafana.png)
 
 
+### Local Kubernetes

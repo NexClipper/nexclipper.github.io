@@ -1,6 +1,6 @@
 ---
-id: new
-title: new
+id: info
+title: NexClipper Docs Use Guide
 
 ---
 
