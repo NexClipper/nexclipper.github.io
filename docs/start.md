@@ -16,7 +16,8 @@ keywords:
 ### Overview
 
 NexClipper 구성요소는 크게 3가지로 구성되어 있습니다.
-NexClipper는 Kubernetes cluster 내에서 데몬셋(DaemonSet)과 파드(Pod), 디플로이먼트(Deployment)형태로 실행됩니다. 
+NexClipper는 Kubernetes cluster 내에서 데몬셋(DaemonSet)과 파드(Pod), 디플로이먼트(Deployment)형태로 실행됩니다.   
+모든 리소스는 nexclipper 네임스페이스에서 구동되며, 프로메테우스 에코시스템은 모두 
 
 |구성요소|리소스 타입|역할|
 |---|---|---|
@@ -24,9 +25,13 @@ NexClipper는 Kubernetes cluster 내에서 데몬셋(DaemonSet)과 파드(Pod), 
 |Provbee|Pod|Provisioning 및 Task 처리|
 |MetricOperator(준비중)|Deployment|메트릭 수집, 처리, 전송|
 
+
+
 :::note
 NexClipper Agent는 Kubernetes 기준 *1.15.12* 이상에서 테스트 되었습니다. 이하 버전에서는 문제가 발생할 수 있습니다.
 :::
+
+---
 
 ### Minimum Requirements
 
@@ -40,6 +45,7 @@ NexClipper는 기본적으로 Linux 환경에서 동작하도록 되어 있습�
 * Target Kubernetes Cluster : 1.15.12 이상
 * Firewall : Outbound (Destination : console.nexclipper.io, Port: 80,443,8080,8090)
 
+---
 
 ### Installation
 
@@ -58,21 +64,20 @@ Kubernetes master is running at https://kubernetes.docker.internal:6443
 KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 
 ```
+---
 
 #### 1. Remote Kubernetes
 
-[https://nexclipper.io](https://nexclipper.io) 로 접속하여 `Get Started`를 클릭합니다.
+[https://nexclipper.io](https://nexclipper.io) 로 접속하여 `TRY` 메뉴를 클릭합니다.
 
 ![img](../static/img/nc-start.png)
 
 
+Beta Test Landing Page로 이동합니다.
 
----
-Landing Page로 이동합니다.
+![img](../static/img/nc-landing.png)
 
----
-
-[https://console.nexclipper.io/login](https://console.nexclipper.io/login) 로 이동합니다.
+`Sign In` 메뉴를 클릭하여 [https://console.nexclipper.io/login](https://console.nexclipper.io/login) 로 이동합니다.
 
 ![img](../static/img/nc-login.png)
 
@@ -97,7 +102,7 @@ Zone Name을 입력합니다. Zone Name은 리스트에 보여지는 값으로 �
 프로비저닝할 대상 클러스터 또는 인프라를 선택합니다. 
 
 :::info
-현재는 쿠버네티스 클러스터만 지원합니다.
+현재는 쿠버네티스 클러스터만 지원합니다. 이후 Baremetal, Instance 또는 Laptop 환경 및 Public Cloud 환경도 제공할 예정입니다.
 :::
 
 ![img](../static/img/nc-select-platform.png)
@@ -127,7 +132,7 @@ klevr-agent-lcp2j   1/1     Running   0          59m
 provbee             1/1     Running   0          59m
 ```
 
-monitoring 네임스페이스에는 프로메테우스 에코시스템이 설치됩니다.
+nex-mon-pro 네임스페이스에는 프로메테우스 에코시스템이 설치됩니다.
 
 * prometheus-operator
 * prometheus
@@ -137,7 +142,7 @@ monitoring 네임스페이스에는 프로메테우스 에코시스템이 설치
 * grafana
 
 ```sh
-> kubectl get pod -n monitoring
+> kubectl get pod -n nex-mon-pro
 NAME                                   READY   STATUS    RESTARTS   AGE
 alertmanager-main-0                    2/2     Running   0          61m
 alertmanager-main-1                    2/2     Running   0          61m
