@@ -29,14 +29,20 @@ module.exports = {
         },
         { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/NexClipper/NexClipper',
-          label: 'GitHub',
-          position: 'left',
+          href: 'https://console.nexclipper.io/login',
+          label: 'Login',
+          position: 'right',
         },
         {
-          href: 'https://console.nexclipper.io/login',
-          label: 'Service',
+          href: 'https://github.com/NexClipper/NexClipper',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
+        {
+          href: 'https://NexClipper.io',
+          label: 'Support',
+          position: 'left',
         },
       ],
     },
@@ -48,11 +54,11 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/',
+              to: 'docs/start',
             },
             {
-              label: 'API Reference',
-              to: 'docs/doc2/',
+              label: 'What is NexClipper?',
+              to: 'docs/',
             },
           ],
         },
