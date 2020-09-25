@@ -57,21 +57,43 @@ Counter 메트릭 타입 확인을 하기 위해 label을 http\_code='500', http
 
 > expose되는 endpoint나 익스포터는 위와 같이 다른 경로로 설정해도 무방하지만 /metrics 경로를 관례처럼 사용합니다. 예) [http://localhost:8000/metrics](http://localhost:8000/metrics)
 
-```
-#!/usr/bin/env python from random import randrange from flask import Flask from prometheus_client import start_http_server, Gauge, Counter import sys
-
-app = Flask('python-library-test') c = Counter('requests', 'Number of requests served, by http code', ['http_code']) g = Gauge('rate_requests', 'Rate of success requests')
-
-responce_500 = 0 responce_200 = 0 rate_responce = 0 success_rate = sys.argv[1] # internal 500 error를 원하는 비율로 발생시키기 위한 입력 인자
-
-@app.route('/') def hello(): global responce_500 global responce_200 global rate_responce if randrange(1, 100) > int(success_rate): c.labels(http_code='500').inc() responce_500 = responce_500 + 1 rate_responce = responce_500 / (responce_500+responce_200) * 100 g.set(rate_responce) return "Internal Server Error\\n", 500 else: c.labels(http_code='200').inc() responce_200 = responce_200 + 1 rate_responce = responce_500 / (responce_500+responce_200) * 100 g.set(rate_responce) return "Hello World!\\n"
-
-start_http_server(8000) app.run(host = '0.0.0.0', port = 8080)
+```python
+#!/usr/bin/env python
+from random import randrange
+from flask import Flask
+from prometheus_client import start_http_server, Gauge, Counter
+import sys
+app = Flask('python-library-test')
+c = Counter('requests', 'Number of requests served, by http code', ['http_code'])
+g = Gauge('rate_requests', 'Rate of success requests')
+responce_500 = 0
+responce_200 = 0
+rate_responce = 0
+success_rate = sys.argv[1] # internal 500 error를 원하는 비율로 발생시키기 위한 입력 인자
+@app.route('/')
+def hello():
+    global responce_500
+    global responce_200
+    global rate_responce
+    if randrange(1, 100) > int(success_rate):
+        c.labels(http_code='500').inc()
+        responce_500 = responce_500 + 1
+        rate_responce = responce_500 / (responce_500+responce_200) * 100
+        g.set(rate_responce)
+        return "Internal Server Error\\n", 500
+    else:
+        c.labels(http_code='200').inc()
+        responce_200 = responce_200 + 1
+        rate_responce = responce_500 / (responce_500+responce_200) * 100
+        g.set(rate_responce)
+        return "Hello World!\\n"
+start_http_server(8000)
+app.run(host = '0.0.0.0', port = 8080)
 ```
 
 테스트 용도이니 간단하게 로컬에서 실행합니다.
 
-```python
+```sh
 $ pip install flask prometheus_client
 $ python app.py 50 # internal 500 error를 원하는 비율로 발생시키기 위한 입력 인자
  * Serving Flask app "python-library-test" (lazy loading)
@@ -84,7 +106,7 @@ $ python app.py 50 # internal 500 error를 원하는 비율로 발생시키기 �
 
 메트릭을 수집하기 위해 간단하게 ab 명령을 활용하여 반복 호출합니다.
 
-```python
+```sh
 $ ab -n 1000 http://localhost:8080/
 ...
 Server Software:        Werkzeug/1.0.1
@@ -108,8 +130,37 @@ Non-2xx responses:      505
 
 메트릭을 확인하기 위해 expose된 8000 포트로 접속해 봅니다.
 
-```
-$ curl localhost:8000 # HELP python_gc_objects_collected_total Objects collected during gc # TYPE python_gc_objects_collected_total counter python_gc_objects_collected_total{generation="0"} 18055.0 python_gc_objects_collected_total{generation="1"} 2461.0 python_gc_objects_collected_total{generation="2"} 0.0 # HELP python_gc_objects_uncollectable_total Uncollectable object found during GC # TYPE python_gc_objects_uncollectable_total counter python_gc_objects_uncollectable_total{generation="0"} 0.0 python_gc_objects_uncollectable_total{generation="1"} 0.0 python_gc_objects_uncollectable_total{generation="2"} 0.0 # HELP python_gc_collections_total Number of times this generation was collected # TYPE python_gc_collections_total counter python_gc_collections_total{generation="0"} 82.0 python_gc_collections_total{generation="1"} 7.0 python_gc_collections_total{generation="2"} 0.0 # HELP python_info Python platform information # TYPE python_info gauge python_info{implementation="CPython",major="3",minor="8",patchlevel="3",version="3.8.3"} 1.0 # HELP requests_total Number of requests served, by http code # TYPE requests_total counter requests_total{http_code="500"} 505.0 requests_total{http_code="200"} 495.0 # HELP requests_created Number of requests served, by http code # TYPE requests_created gauge requests_created{http_code="500"} 1.5990454944853382e+09 requests_created{http_code="200"} 1.599045494488697e+09 # HELP rate_requests Rate of success requests # TYPE rate_requests gauge rate_requests 50.5
+```sh
+$ curl localhost:8000
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 18055.0
+python_gc_objects_collected_total{generation="1"} 2461.0
+python_gc_objects_collected_total{generation="2"} 0.0
+# HELP python_gc_objects_uncollectable_total Uncollectable object found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 82.0
+python_gc_collections_total{generation="1"} 7.0
+python_gc_collections_total{generation="2"} 0.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="8",patchlevel="3",version="3.8.3"} 1.0
+# HELP requests_total Number of requests served, by http code
+# TYPE requests_total counter
+requests_total{http_code="500"} 505.0
+requests_total{http_code="200"} 495.0
+# HELP requests_created Number of requests served, by http code
+# TYPE requests_created gauge
+requests_created{http_code="500"} 1.5990454944853382e+09
+requests_created{http_code="200"} 1.599045494488697e+09
+# HELP rate_requests Rate of success requests
+# TYPE rate_requests gauge
+rate_requests 50.5
 ```
 
 제가 작성한 Counter인 http\_code='500', http\_code='200' 를 보면 위 ab 에서 확인한 메트릭과 동일함을 알 수 있습니다.
@@ -132,15 +183,31 @@ node\_exporter는 프로메테우스 커뮤니티에서 공식적으로 제공�
 
 링크된 위 readme 페이지를 참고해서 macOS 로컬에 node\_exporter를 실행합니다. 바이너리로 되어 있기 때문에 컨테이너로 실행해도 되지만 mac에서는 호스트 네트워크 관련가 있어서 직접 실행했습니다.
 
-```
-wget <https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.darwin-amd64.tar.gz> tar -xzf node_exporter-1.0.1.darwin-amd64.tar.gz cd node_exporter-1.0.1.darwin-amd64 ./node_exporter
-
-level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:177 msg="Starting node_exporter" version="(version=1.0.1, branch=HEAD, revision=3715be6ae899f2a9b9dbfd9c39f3e09a7bd4559f)" level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:178 msg="Build context" build_context="(go=go1.14.4, user=root@4c8e5c628328, date=20200616-12:52:07)" level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:105 msg="Enabled collectors" level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:112 collector=boottime level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=cpu level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=diskstats level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=filesystem level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=loadavg level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=meminfo level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=netdev level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=textfile level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=time level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=uname level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:191 msg="Listening on" address=:9100 level=info ts=2020-09-02T12:31:03.310Z caller=tls_config.go:170 msg="TLS is disabled and it cannot be enabled on the fly." http2=false
+```sh
+$ wget  https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.darwin-amd64.tar.gz
+$ tar -xzf node_exporter-1.0.1.darwin-amd64.tar.gz
+$ cd node_exporter-1.0.1.darwin-amd64
+$ ./node_exporter
+level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:177 msg="Starting node_exporter" version="(version=1.0.1, branch=HEAD, revision=3715be6ae899f2a9b9dbfd9c39f3e09a7bd4559f)"
+level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:178 msg="Build context" build_context="(go=go1.14.4, user=root@4c8e5c628328, date=20200616-12:52:07)"
+level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:105 msg="Enabled collectors"
+level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:112 collector=boottime
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=cpu
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=diskstats
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=filesystem
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=loadavg
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=meminfo
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=netdev
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=textfile
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=time
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:112 collector=uname
+level=info ts=2020-09-02T12:31:03.310Z caller=node_exporter.go:191 msg="Listening on" address=:9100
+level=info ts=2020-09-02T12:31:03.310Z caller=tls_config.go:170 msg="TLS is disabled and it cannot be enabled on the fly." http2=false
 ```
 
 기본적으로 위에서도 언급했지만 예약된 포트정보들이 있고 /metrics 엔드포인트로 expose 되므로 [http://localhost:9100/metrics](http://localhost:9100/metrics) 에 접속해 봅니다. 현재 사용중인 macbook의 머신 메트릭을 확인할 수 있습니다.
 
-```python
+```sh
 $ curl http://localhost:9100/metrics
 ...
 # HELP node_cpu_seconds_total Seconds the cpus spent in each mode.
