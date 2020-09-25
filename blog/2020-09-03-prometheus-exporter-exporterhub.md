@@ -85,7 +85,7 @@ $ python app.py 50 # internal 500 error를 원하는 비율로 발생시키기 �
 메트릭을 수집하기 위해 간단하게 ab 명령을 활용하여 반복 호출합니다.
 
 ```python
-$ ab -n 1000 <http://localhost:8080/>
+$ ab -n 1000 http://localhost:8080/
 ...
 Server Software:        Werkzeug/1.0.1
 Server Hostname:        localhost
@@ -141,7 +141,7 @@ level=info ts=2020-09-02T12:31:03.309Z caller=node_exporter.go:177 msg="Starting
 기본적으로 위에서도 언급했지만 예약된 포트정보들이 있고 /metrics 엔드포인트로 expose 되므로 [http://localhost:9100/metrics](http://localhost:9100/metrics) 에 접속해 봅니다. 현재 사용중인 macbook의 머신 메트릭을 확인할 수 있습니다.
 
 ```python
-$ curl <http://localhost:9100/metrics>
+$ curl http://localhost:9100/metrics
 ...
 # HELP node_cpu_seconds_total Seconds the cpus spent in each mode.
 # TYPE node_cpu_seconds_total counter
