@@ -1,5 +1,5 @@
 ---
-title: "Prometheus Exporter & ExporterHub"
+title: "Prometheus Exporter & ExporterHub (Eng.)"
 author: Jinwoong Kim
 author_title: NexClipper
 author_url: https://github.com/ddiiwoong
