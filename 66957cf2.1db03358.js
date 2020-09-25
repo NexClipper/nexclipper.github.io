@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[43],{100:function(p){p.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"nex-clipper","name":"nexclipper","count":19,"permalink":"/blog/tags/nex-clipper"}')}}]);
