@@ -91,24 +91,22 @@ NexClipper is developing with the following roadmap to solve the problems it has
 
 The following features are currently being developed.
 
-### Prometheus ecosystem can be quickly and easily deployed in any production environment. ([https://github.com/NexClipper/provbee](https://github.com/NexClipper/provbee))  
+Prometheus ecosystem can be quickly and easily deployed in any production environment. ([https://github.com/NexClipper/provbee](https://github.com/NexClipper/provbee))  
 - NexClipper Cloud allows you to quickly and easily deploy Prometheus ecosystem through a simple installation command.
 - NexClipper On-Premise provides a separate Prometheus server cluster and various ecosystem installation and operation environments in multiple multi-cloud environments.
 - Long-term storage can be configured based on open source. (Avoiding vendor dependency)
 - Provisioned based on PromScale, which is basically composed of TimescaleDB, and storage period and capacity can be increased whenever necessary.
  
-### Similar to the Bastion Host role in a closed environment where a firewall exists, the open source-based task manager ([https://github.com/NexClipper/klevr](https://github.com/NexClipper/klevr)) runs various jobs, it can be operated even in a Private cloud environment.
+Similar to the Bastion Host role in a closed environment where a firewall exists, the open source-based task manager ([https://github.com/NexClipper/klevr](https://github.com/NexClipper/klevr)) runs various jobs, it can be operated even in a Private cloud environment.
 - Separate charts or resources can be directly distributed, and operation is possible in a private environment that is isolated for security reasons.
 - Cluster Management or Operation is possible without direct access to KubeAPI.
 - Remotely modify and manage Prometheus and AlertManager config.
 
 
-### Provides convenient functions related to queries and rules.
+NexClipper provides convenient functions related to queries and rules.
 - Multiple Prometheus instances can be accessed through a single endpoint and multi-cluster graphana dashboards can be operated while minimizing the movement of multiple data sources.
 - Promlens([https://github.com/promlabs/promlens-public](https://github.com/promlabs/promlens-public)) Preview features are included so you can write and test simple queries.
-- exporter를 관리하는 기능을 통해 쉽게 설치하고 운영을 위한 AlertRule 구성이 가능합니다. (ExporterHub.io, https://github.com/NexClipper/exporterhub.io)
-
-With the ability to manage exporters, you can easily install and configure AlertRule for operation. [ExporterHub.io](https://ExporterHub.io), [https://github.com/NexClipper/exporterhub.io](https://github.com/NexClipper/exporterhub.io)
+- With the ability to manage exporters, you can easily install and configure AlertRule for operation. [ExporterHub.io](https://ExporterHub.io), [https://github.com/NexClipper/exporterhub.io](https://github.com/NexClipper/exporterhub.io)
 
 We are working hard to provide many other features.
 
