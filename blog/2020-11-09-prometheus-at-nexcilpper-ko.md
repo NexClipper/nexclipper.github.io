@@ -12,7 +12,7 @@ tags: [Prometheus, Exporter, NexClipper]
 
 ## 쿠버네티스 모니터링을 위한 개요
 
-쿠버네티스는 CNCF(Cloud Native Computing Foundation)을 졸업한 최초의 프로젝트이며, 현재 컨테이너 오케스트레이션의 사실상 표준이자 IaaS, PaaS 영역까지 아우르며 불과 몇년 사이에 엄청난 성장과 커뮤니티 활성화, 실제 프로덕션 환경에서도 많은 기업들이 도입을 하고 있는 상황입니다. 
+쿠버네티스는 CNCF(Cloud Native Computing Foundation)을 졸업한 최초의 프로젝트이며, 현재 컨테이너 오케스트레이션의 사실상 표준이자 IaaS, PaaS 영역까지 아우르며 불과 몇년 사이에 엄청난 성장과 커뮤니티 활성화가 되며 실제 프로덕션 환경에서도 많은 기업들이 도입을 하고 있는 상황입니다. 
 
 <!--truncate-->
 
@@ -26,7 +26,7 @@ tags: [Prometheus, Exporter, NexClipper]
 
 - Prometheus : 오픈 소스 시계열 데이터베이스
 - kube-state-metric : 클러스터의 다양한 오브젝트, 워크로드의 메트릭 정보를 생성하는 서비스
-- node_exporter : *INX 커널에 의해 노출되는 하드웨어 및 OS 메트릭 정보를 생성하는 서비스
+- node_exporter : *NIX 커널에 의해 노출되는 하드웨어 및 OS 메트릭 정보를 생성하는 서비스
 - pushgateway : 임시 및 배치 작업의 메트릭을 수신, 제공
 - alertmanager : 프로메테우스 서버에서 보낸 알림(Alert)를 처리(중복제거, 그룹화, 전송)하는 서비스
 - grafana : 모니터링과 메트릭 분석을 위한 대시보드 시각화 도구
@@ -60,7 +60,7 @@ tags: [Prometheus, Exporter, NexClipper]
 - 관리의 용이성 - 프로메테우스는 관리가 편하다는 것이 가장 핵심입니다. 별도의 설치없이 바이너리 파일 하나로 동작하기 때문에 기본적으로 로컬디스크만 있으면 되고 데이터베이스나 캐시와 같은 다른 솔루션과의 종속성이 거의 없습니다.
 - 서비스 디스커버리 - 기본적으로 파일 또는 DNS기반의 서비스 디스커버리 구성이 가능하기 때문에 주기적으로 쿼리되는 DNS 도메인 네임을 통해 기본적으로 스크랩할 대상을 등록합니다. 쿠버네티스 REST API에서 스크랩할 대상을 검색하고 항상 쿠버네티스 클러스터와 동기화 상태를 유지할 수 있습니다.
 
-    [https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config)
+[https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config)
 
 - 강력하고 쉬운 데이터 모델 - 수집 된 모든 모니터링 데이터는 기본 제공되는 시계열 데이터베이스(TSDB)에 메트릭 형식으로 저장됩니다. 그리고 기본 이름 외에도 모든 샘플에는 샘플의 특성을 설명하는 태그 세트가 포함되어 있습니다. 각 시계열 데이터는 메트릭 이름과 옵션인 레이블이라 부르는 키-밸류 쌍으로 고유하게 식별됩니다. 각 시계열 데이터는 일련의 샘플 값을 시간 순서대로 저장합니다. 각 샘플은 float64 값과 밀리세컨드 수준의 타임스탬프로 구성됩니다.
 - 쿼리 언어(PromQL) - 레이블과 시계열을 기반으로 모니터링 데이터를 쉽게 쿼리하고 집계할 수 있습니다. 메트릭 쿼리에 함수와 연산자를 적용하고 레이블별로 필터링 및 그룹화하고 매칭과 필터링을 위해 정규 표현식을 사용할 수도 있습니다. 또한 PromQL은 그라파나(Grafana)와 같은 데이터 시각화나 알림(alert, notification)에도 사용됩니다.
@@ -74,7 +74,7 @@ tags: [Prometheus, Exporter, NexClipper]
 - 원시 로그 / 이벤트 수집이 불가합니다.
 - 애플리케이션 기반 요청 추적(Request Tracing)이 자체적으로 지원이 되지 않습니다.
 - 이상 감지(Anomaly Detection)를 하기 위해서는 별도의 데이터 분석 역량이 필요합니다.
-- 스케일링(horizontal scaling) 및 고가용성에 대한
+- 스케일링(horizontal scaling) 및 고가용성에 대한 구성이 복잡합니다.
 - 배포하고 운영하는데 많은 공수와 노력이 필요합니다. (PromQL 학습, Grafana 대시보드 구성, Alert-Rule 작성 등)
 
 ## NexClipper
@@ -100,7 +100,7 @@ NexClipper는 이런 부분을 프로메테우스 에코시스템을 그대로 �
 쿼리 및 룰 관련한 편의기능을 제공합니다.  
 - 여러개의 프로메테우스 인스턴스를 동시에 하나의 엔드포인트로 쿼리가 가능합니다.
   - 단일 엔드포인트를 통해 여러 데이터 소스의 이동을 최소화하고 멀티클러스터의 그라파나 대시보드 운영이 가능합니다.
-- Promlens([https://github.com/promlabs/promlens-public](https://github.com/promlabs/promlens-public)) Preview features를 포함하고 있어 간단한 쿼리 작성하고 확인할 수 있습니다.
+- Promlens([https://github.com/promlabs/promlens-public](https://github.com/promlabs/promlens-public)) Preview features를 포함하고 있어 간단한 쿼리를 작성하고 확인할 수 있습니다.
 - exporter를 관리하는 기능을 통해 쉽게 설치하고 운영을 위한 AlertRule 구성이 가능합니다. (ExporterHub.io, https://github.com/NexClipper/exporterhub.io)
 
 이외에도 많은 기능을 제공하기 위해 고군분투하고 있습니다.
