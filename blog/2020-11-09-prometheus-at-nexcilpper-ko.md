@@ -14,6 +14,8 @@ tags: [Prometheus, Exporter, NexClipper]
 
 쿠버네티스는 CNCF(Cloud Native Computing Foundation)을 졸업한 최초의 프로젝트이며, 현재 컨테이너 오케스트레이션의 사실상 표준이자 IaaS, PaaS 영역까지 아우르며 불과 몇년 사이에 엄청난 성장과 커뮤니티 활성화, 실제 프로덕션 환경에서도 많은 기업들이 도입을 하고 있는 상황입니다. 
 
+<!--truncate-->
+
 [https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/monitoring_architecture.md#architecture](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/monitoring_architecture.md#architecture) 기본적인 쿠버네티스의 메트릭 설명을 보면 시스템 메트릭과 서비스 메트릭으로 나뉘어서 설명하고 있고 모니터링 방식은 크게 코어 메트릭 파이프라인과 모니터링 파이프라인으로 구분되어 있습니다. 
 
 해당 문서에서도 나와 있듯이 초기에는 힙스터(Heapster)는 쿠버네티스와 함께 모니터링 솔루션으로 널리 사용됐습니다. 모니터링 데이터를 외부 시스템으로 전송하는 도구로 시작되었고, 이후 자체적인 모니터링 시스템으로 성장하게 됐습니다. 하지만 힙스터는 쿠버네티스 1.11버전에서 deprecated되었고 1.13이후의 쿠버네티스 클러스터를 구성하는 대부분의 구성 요소들은 프로메테우스에서 클라우드 네이티브 형태로 측정하도록 지원하고 있습니다.  
@@ -79,7 +81,9 @@ tags: [Prometheus, Exporter, NexClipper]
 
 NexClipper는 이런 부분을 프로메테우스 에코시스템을 그대로 활용하면서 가지고 있는 문제점을 해결하기 위해 아래와 같은 로드맵을 가지고 개발중입니다. 기존의 오픈소스와 솔루션을 유지하면서도 새로운 기능들을 추가하기 위해 열심히 노력중입니다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ef94478-3d83-4982-a5db-4ed2e4234587/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ef94478-3d83-4982-a5db-4ed2e4234587/Untitled.png)
+![architect](images/nexclipper_architect.png)
+
+다음과 같은 기능들을 현재 개발중입니다. 
 
 프로메테우스 에코시스템을 운영환경으로 어떤 환경에서도 쉽고 빠르게 배포가능합니다. ([https://github.com/NexClipper/provbee](https://github.com/NexClipper/provbee))  
   - 클라우드 서비스에서는 간단한 설치 스크립트를 통해 프로메테우스 에코시스템을 쉽고 빠르게 배포할 수 있습니다.
