@@ -227,7 +227,12 @@ statefulset.apps/nc-timescaledb   1/1     106s
 
 더 상세한 메트릭 정보를 확인하기 위해 그라파나 아이콘을 클릭하게 되면 NodePort로 expose된 대시보드를 확인할 수 있습니다.  
 
-기본 계정 정보는 입력값이 없었다면 아이디, 패스워드 동일하게 `admin:admin`으로 설정되어 있습니다.
+기본 계정 정보는 입력값이 없었다면 아이디, 패스워드 동일하게 `admin:admin`으로 설정됩니다.
 
 ![img](../static/img/nc-grafana.png)
+
+
+프로메테우스 Configuration 메뉴를 클릭하면 현재 프로비저닝된 상태의 설정을 수정할 수 있는 화면입니다. 기본적인 yaml의 문법 체크는 에디터 화면에서 가능하며, promtool 테스트 기능을 화면에 적용하여 기본적인 프로메테우스 설정에 문제여부를 파악하고 이상이 없으면 저장 및 적용이 가능합니다.  
+
+![img](../static/img/nc-prom-config.png)
 
