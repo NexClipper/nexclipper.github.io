@@ -8,7 +8,10 @@
 
 /* You can override the default Infima variables here. */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
 :root {
+  --ifm-font-family-base: 'IBM Plex Sans';
   --ifm-color-primary: #006daa;
   --ifm-color-primary-dark: #006299;
   --ifm-color-primary-darker: #005d90;
