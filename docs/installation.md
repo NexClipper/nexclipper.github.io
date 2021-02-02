@@ -57,7 +57,7 @@ NexClipper is intended to run in a Linux environment by default.
   * NexClipper Agent(DaemonSet) -> Outbount (Destination : console.nexclipper.io, Port: 8090)
 ---
 
-### Installation
+### Check Environment
 
 There are two options for installation.  
 
@@ -81,7 +81,7 @@ You might encounter problems if you install duplicates with an existing operatin
 
 ---
 
-### Kubernetes
+### Install NexClipper
 
 Go to [https://nexclipper.github.io/](https://nexclipper.github.io/) and click the `Login` menu.
 
@@ -185,6 +185,8 @@ provbee-67f8ffbf55-2tpfs     1/1     Running   0          11m
 
 When the agent installation is complete, the agent status changes to Running as shown below. Then, The feature is enabled to install the Prometheus stack.
 
+### Install Prometheus Eco-systems
+
 ![img](../static/img/nc-cluster-prometheus-install.png)
 
 The default installation options are as follows.  
@@ -238,6 +240,8 @@ NAME                         DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE 
 daemonset.apps/klevr-agent   1         1         1       1            1           <none>          18m
 ```
 
+### Monitor Prometheus & Kubernetes
+
 You can return to the console to view the list of provisioned clusters.
 
 ![img](../static/img/nc-cluster-dashboard.png)
@@ -282,6 +286,8 @@ By default, you can view the information in the cluster as follows.
 * API Server Status: Cluster API Server Status
 * API server total requests code: 5 minute average by Kubenetes API response code
 
+### Edit & Unit Test Prometheus & Alertmanager Config
+
 Click the Config menu under Prometheus to modify the configuration in the currently provisioned state. Basically the feature is possible to edit config and rules(alert, recording) on the editor screen, and you can use the promtool test function to determine whether there is a problem with the unit test, and save and apply it if there is no problem.
 
 ![img](../static/img/nc-prom-config.png)
@@ -303,4 +309,23 @@ If there is no problem with the Configuration, apply it through `Apply & Reload`
 The Alert Configuration, Alert-Rule, and Recording-Rule can also be modified, tested, and applied in the same way as above.
 
 ![img](../static/img/nc-am-config.png)
+
+### Delete Cluster
+
+The NexClipper service will no longer be available after deleting a cluster. 
+For reuse, Cluster installation must be performed again. 
+
+![img](../static/img/nc-delete-cluster.png)
+
+After several steps including consent for deletion, you can delete a cluster.
+
+![img](../static/img/nc-delete-process.png)
+
+To delete completely NexClipper Product, you can run the following script.
+
+```sh
+curl -sL http://gg.gg/provbee-seeyou | NEXNS=nexclipper DEL=Y bash
+```
+
+
 
