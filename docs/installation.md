@@ -252,12 +252,10 @@ You can view the details of the cluster.
   * It shows all Job and Task status performed by NexClipper.
 * Prometheus
   * It shows the currently installed Prometheus stack. Also, it has the feature to expose externally accessible endpoints in the Prometheus ecosystem. Click on the ecosystem to view more detailed information, and you can see the each dashboard exposed on NodePort or LoadBalancer.
-* Install Script
-  * It shows the initial installation script.
 * Volumes
   * It shows the current PVs information and status for long-term storage.
 
-* Clicking the link on the right side of Prometheus will take you to the Prometheus dashboard.
+Clicking the link or Health menu of Prometheus will take you to the Prometheus Health dashboard.
 
 ![img](../static/img/nc-prom-dashboard.png)
 
