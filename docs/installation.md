@@ -1,5 +1,5 @@
 ---
-id: start_en
+id: install
 title: Getting Started Guides
 hide_title: true
 description: 
@@ -230,7 +230,9 @@ You can view the details of the cluster.
 By default, you can view the information in the cluster as follows.  
 * Age(Cluster Age): Time elapsed since cluster creation
 * Cluster Status: Status of cluster nodes
-  * All nodes are healthy - All Ready, Some nodes are healthy - Partially Ready, All nodes unhealthy - Not Ready
+  * All nodes are healthy - All Ready
+  * Some nodes are healthy - Partially Ready
+  * All nodes unhealthy - Not Ready
 * Nodes: Number of Nodes
 * Unavaliable Node: Unhealthy Node Count
 * Namespaces: Number of Namespaces
