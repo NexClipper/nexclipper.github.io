@@ -132,6 +132,40 @@ If it is not a Kubernetes environment such as local and laptop, run the script b
 curl -sL gg.gg/provbee | TAGKLEVR=0.2.4-SNAPSHOT K3S_SET=Y K_API_KEY="977b9d295d0f4273be3575cdaeae22b3" K_PLATFORM="kubernetes" K_MANAGER_URL="http://console.nexclipper.io:8090" K_ZONE_ID="62" bash
 ```
 
+```sh
+NexClipper serivce first checking
+[INFO]   Welcome to NexClipper!
+namespace/nex-system created
+serviceaccount/nexc created
+secret/nexc-ssh-key created
+secret/nex-secrets created
+configmap/nex-system-agent-config created
+role.rbac.authorization.k8s.io/nexclipper-role created
+clusterrolebinding.rbac.authorization.k8s.io/nexc-rbac created
+rolebinding.rbac.authorization.k8s.io/nexclipper-rb created
+Cluster "docker-desktop" set.
+User "nexc-nex-system-docker-desktop" set.
+Context "nexc-nex-system-docker-desktop" modified.
+Switched to context "nexc-nex-system-docker-desktop".
+secret/nexc-kubeconfig created
+service/provbee-service created
+deployment.apps/provbee created
+daemonset.apps/klevr-agent created
+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:
+## Namespace "nex-system" check	  OK.
+## NexClipper system check	  OK. 🍯❤️🐝
+ ⛵ Enjoy NexClipper! :)
+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:
+88888888ba                                         88888888ba
+88      '8b                                        88      '8b
+88      ,8P                                        88      ,8P
+88aaaaaa8P'  🐝,dPPYba,   ,adPPYba,   8b       d8  88aaaaaa8P'   ,adPPYba,   ,adPPYba,
+88'''''''    88P'   'Y8  a8'     '8a  '8b     d8'  88''''''8b,  a8P_____88  a8P_____88
+88           88          8b       d8   '8b   d8'   88      '8b  8PP'''''''  8PP'''''''
+88           88          '8a,   ,a8'    '8b,d8'    88      a8P  '8b,   ,aa  '8b,   ,aa
+88           88           ''YbbdP''       '8'      88888888P'    ''Ybbd8''   ''Ybbd8''
+```
+
 Click `Continue` and go to the next step.
 
 You will not be able to communicate with the NexClipper Manager server until Klevr and Provbee installation is complete, so you can see the following screens. If the installation script is not running, you can see it on the following screen. 
