@@ -64,7 +64,7 @@ NexClipper provides convenient functions related to queries and rules. Also, Pro
 ### Objective
 
 #### Automated Enterprise Prometheus ecosystem
-
+- Architecture Diagram overview(Image click to go youtube)
 [![Architecture Diagram](https://raw.githubusercontent.com/NexClipper/nexclipper.github.io/master/assets/nexclipper_architecture_overview.png)](https://youtu.be/Z_71FC8iOu0)
 
 - Managing Prometheus and its ecosystem easily, reliably, and at scale
