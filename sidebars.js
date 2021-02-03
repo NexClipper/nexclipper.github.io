@@ -14,7 +14,7 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'Provbee ✈︎', 
+          label: 'ProvBee ✈︎', 
           href: 'https://github.com/NexClipper/provbee' 
         },
         {
@@ -24,7 +24,7 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'WebStork ✈︎',
+          label: 'Webstork ✈︎',
           href: 'https://github.com/NexClipper/webstork'
         },
         {
@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'MetricOps ✈︎',
+          label: 'MetricOperator ✈︎',
           href: 'https://github.com/NexClipper/metric-operator'
         },
       ],
