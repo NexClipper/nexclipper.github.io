@@ -37,22 +37,30 @@ The following features are currently being developed.
 
 ### Products
 
+#### Provbee
+
 Prometheus ecosystem can be quickly and easily deployed in any production environment. ([https://github.com/NexClipper/provbee](https://github.com/NexClipper/provbee))  
 - NexClipper Cloud allows you to quickly and easily deploy Prometheus ecosystem through a simple installation command.
 - NexClipper On-Premise provides a separate Prometheus server cluster and various ecosystem installation and operation environments in multiple multi-cloud environments.
 - Long-term storage can be configured based on open source softwares. (Avoiding vendor dependency)
 - Provisioned based on PromScale, which is basically composed of TimescaleDB, and storage period and capacity can be increased whenever necessary.
  
+
+#### Klevr
 Similar to the Bastion Host role, even in a blocking environment such as a firewall, the open source-based Task Manager([https://github.com/NexClipper/klevr](https://github.com/NexClipper/klevr)) executes asynchronous jobs, so it can be operated in a private cloud environment.  
 - Separate charts or resources can be directly distributed, and operation is possible in a private environment that is isolated for security reasons.
 - Cluster management or operation is possible without direct access to KubeAPI.
 - Remotely modify and manage Prometheus and AlertManager config.
 
-
-NexClipper provides convenient functions related to queries and rules.
-- Multiple Prometheus instances can be queried simultaneously to a single endpoint and multi-cluster Graphana dashboards can be operated while minimizing the movement of multiple data sources.
-- Promlens([https://github.com/promlabs/promlens-public](https://github.com/promlabs/promlens-public)) Preview features are included so you can write and test simple queries.
+#### ExporterHub
+Consolidated Exporters database and catalog.
 - With the ability to manage exporters, you can easily install and configure AlertRule for operation. [ExporterHub.io](https://ExporterHub.io), [https://github.com/NexClipper/exporterhub.io](https://github.com/NexClipper/exporterhub.io)
+
+
+#### PromLens (Bundle) 
+NexClipper provides convenient functions related to queries and rules. Also, Promlens is the power tool for querying Prometheus.
+- Promlens([https://github.com/promlabs/promlens-public](https://github.com/promlabs/promlens-public)) Preview features are included so you can write and test simple queries. If you unlock commercial features, contact us.
+
 
 ### Objective
 
@@ -64,7 +72,6 @@ NexClipper provides convenient functions related to queries and rules.
 
 - Providing advanced technologies essential to production environments 
   - MetricOps enables automation of all operation based on metrics, and ML-based prediction.
-
   - GitOps, without dependency on environments and neutral to SLO, easily execute deployment and roll-back.
 
 
