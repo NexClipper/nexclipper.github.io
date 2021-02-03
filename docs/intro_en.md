@@ -65,6 +65,8 @@ NexClipper provides convenient functions related to queries and rules. Also, Pro
 
 #### Automated Enterprise Prometheus ecosystem
 
+[![Architecture Diagram](https://raw.githubusercontent.com/NexClipper/nexclipper.github.io/master/assets/nexclipper_architecture_overview.png)](https://youtu.be/Z_71FC8iOu0)
+
 - Managing Prometheus and its ecosystem easily, reliably, and at scale
   - It is necessary to run a proper monitoring tool after the initial Kubernetes test or POC.
   - As Kubernetes ecosystem is getting more complicated with more OSS, it’s not easy to organize internal monitoring tools.
