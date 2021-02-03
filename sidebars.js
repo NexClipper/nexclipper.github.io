@@ -24,17 +24,17 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'webstork',
+          label: 'WebStork',
           href: 'https://github.com/NexClipper/webstork'
         },
         {
           type: 'link',
-          label: 'exporterhub.io',
+          label: 'ExporteHub',
           href: 'https://github.com/NexClipper/exporterhub.io'
         },
         {
           type: 'link',
-          label: 'metric-operator',
+          label: 'MetricOps',
           href: 'https://github.com/NexClipper/metric-operator'
         },
       ],
