@@ -29,7 +29,7 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'ExporteHub',
+          label: 'ExporterHub',
           href: 'https://github.com/NexClipper/exporterhub.io'
         },
         {
