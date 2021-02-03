@@ -15,9 +15,9 @@ keywords:
 
 ### Overview
 
-The NexClipper component consists of three main types of resources.  
-The NexClipper Services runs in DaemonSet, StatefulSet, and Deployment within the Kubernetes cluster.  
-All resources run nex-system, nexclipper Namespace by default, and contain ecosystems related to Prometheus.
+NexClipper has three main components:    
+NexClipper runs in the type of DaemonSet, StatefulSet, and Deployment within Kubernetes cluster.  
+All resources run in the nex-system, nexclipper Namespace by default, and contain ecosystem related to Prometheus.
 
 |Component|Resource|Role|
 |---|---|---|
@@ -37,16 +37,16 @@ All resources run nex-system, nexclipper Namespace by default, and contain ecosy
 |ExporterHub(Preparing)|Deployment|Exporter curation page|
 
 :::note
-The NexCliper Agent has been tested for Kubernetes version 1.15.12 or higher. Problems may occur in lower versions.
+NexClipper Agent has been tested for Kubernetes version 1.15.12 or higher. Problems may occur in lower versions.
 :::
 
 ---
 
 ### Minimum Requirements
 
-NexClipper is intended to run in a Linux environment by default.
+NexClipper runs in a Linux environment by default.
 
-* Operating Systems : Linux(Included WSL), MacOS 10.14+
+* Operating Systems : Linux(WSL included), MacOS 10.14+
 * Software
   * bash or zsh
   * curl
@@ -67,7 +67,7 @@ There are two options for installation.
    * When running locally, such as Docker Desktop, Minikube, K3s, MicroK8s, etc.
 
 
-Run the following command to determine the currently connected cluster in an environment that can run bash or zsh. If you configured your Kubernetes environment with docker-desktop, you might get results similar to the following:
+Run the following command to check the currently connected cluster in an environment that can run bash or zsh. If you have configured your Kubernetes environment with docker-desktop, you are expected to get results similar to the following:
 
 ```bash
 $ kubectl cluster-info
@@ -76,14 +76,14 @@ KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/
 ```
 
 :::caution
-You might encounter problems if you install duplicates with an existing operating Prometheus Operator. NexClipper distributes and manages Prometheus-related ecosystems based on Helm.
+You might encounter problems if you install duplicates with an existing operating Prometheus Operator. NexClipper distributes and manages Prometheus-related ecosystem based on Helm.
 :::
 
 ---
 
 ### Install NexClipper
 
-Go to [https://nexclipper.github.io/](https://nexclipper.github.io/) and click the `Login` menu.
+Go to [https://nexclipper.github.io/](https://nexclipper.github.io/) and click on the `Login`.
 
 ![img](../static/img/nc-start.png)
 
@@ -93,7 +93,7 @@ Go to [https://console.nexclipper.io/login](https://console.nexclipper.io/login)
 ![img](../static/img/nc-login.png)
 
 :::info
-Currently, we only support e-mail and Google Authentication (including GSuite). If you need to use it, please contact support@nexclipper.io.
+Currently, we only support e-mail and Google Authentication (including GSuite). If you need to use NexClipper, please contact support@nexclipper.io.
 :::
 
 Log in with your Account.
@@ -102,13 +102,13 @@ For first-time users, you can check the Welcome screen as shown below.
 
 ![img](../static/img/nc-welcome.png)
 
-NexClipper is similar to a Kubernetes cluster, but with a different concept, it works based on a logical group called a Cluster where a separate NexClipper Product is installed. Follow these steps for issuing API KEY mapped to your account.
+NexClipper is similar to Kubernetes cluster, but with a different concept. It works based on a logical group called a Cluster where a separate NexClipper Suite is installed. Follow these steps to issue API KEY mapped to your account.
 
-Type a Cluster Name. The Cluster Name is the value shown in the list and is the input value for the user to distinguish the cluster.
+Type a Cluster Name. The Cluster Name is a value shown in the list and is an input value for the user to distinguish the cluster.
 
 ![img](../static/img/nc-create-zone.png)
 
-Select the target platform or infrastructure to provision.
+Select a target platform or infrastructure to provision.
 
 :::info
 Currently, only Kubernetes clusters are supported. We will also provide a Baremetal, Instance, or Laptop environment and a Public Cloud environment.
@@ -116,7 +116,7 @@ Currently, only Kubernetes clusters are supported. We will also provide a Bareme
 
 ![img](../static/img/nc-select-platform.png)
 
-Bootstrap scripts will be created to install on the selected platform.
+A bootstrap scripts will be created to install on the selected platform.
 
 ![img](../static/img/nc-bootstrap.png)
 
@@ -127,7 +127,7 @@ For Kubernetes environments, run the script below.
 curl -sL gg.gg/provbee | TAGKLEVR=0.2.4-SNAPSHOT K3S_SET=N K_API_KEY="977b9d295d0f4273be3575cdaeae22b3" K_PLATFORM="kubernetes" K_MANAGER_URL="http://console.nexclipper.io:8090" K_ZONE_ID="62" bash
 ```
 
-If it is not a Kubernetes environment such as local and laptop, run the script below. The script will be installed based on K3s.
+If it is not Kubernetes environment such as local and laptop, run the script below. The script will be installed based on K3s.
 ```sh
 curl -sL gg.gg/provbee | TAGKLEVR=0.2.4-SNAPSHOT K3S_SET=Y K_API_KEY="977b9d295d0f4273be3575cdaeae22b3" K_PLATFORM="kubernetes" K_MANAGER_URL="http://console.nexclipper.io:8090" K_ZONE_ID="62" bash
 ```
@@ -166,15 +166,15 @@ daemonset.apps/klevr-agent created
 88           88           ''YbbdP''       '8'      88888888P'    ''Ybbd8''   ''Ybbd8''
 ```
 
-Click `Continue` and go to the next step.
+Click on `Continue` and go to the next step.
 
-You will not be able to communicate with the NexClipper Manager server until Klevr and Provbee installation is complete, so you can see the following screens. If the installation script is not running, you can see it on the following screen. 
+After Klevr and Provbee are installed, you will be able to communicate with NexClipper Manager server. If the installation script is not running, you can see it on the following page. 
 
 ![img](../static/img/nc-cluster-detail-install.png)
 
 You can also check the agent installation status through kubectl.
 
-The nex-system namespace creates Klevr agent (DaemonSet), Provbee (Deployment).
+Klevr agent (DaemonSet), Provbee (Deployment) will be created in the nex-system Namespace.
 
 ```sh
 > kubectl get pod -n nex-system
@@ -183,7 +183,7 @@ klevr-agent-8dh6g            1/1     Running   0          11m
 provbee-67f8ffbf55-2tpfs     1/1     Running   0          11m
 ```
 
-When the agent installation is complete, the agent status changes to Running as shown below. Then, The feature is enabled to install the Prometheus stack.
+After the agent installation is completed, the agent status changes to Running. Then, the button to install Prometheus will be enabled.
 
 ### Install Prometheus Eco-systems
 
@@ -201,7 +201,7 @@ The default installation options are as follows.
 * Size of Wal(GB): Prometheus WAL Volume Size(Default: 2Gi)
 * Grafana Admin Password : Grafana initial password(Default: admin)
 
-By default, at the `nexclipper` namespace will have the following Prometheus ecosystems.  
+By default, the `nexclipper` Namespace will have the following Prometheus ecosystem.  
 
 * prometheus
 * node-exporter
@@ -227,7 +227,7 @@ NAME                              READY   AGE
 statefulset.apps/nc-timescaledb   1/1     8m39s
 ```
 
-Additionally, The nex-system namespace creates WebStork (Deployment), and MetricOps (Deployment).
+Additionally, WebStork (Deployment), and MetricOps (Deployment) will be created in the nex-system Namespace.
 
 ```sh
 > kubectl get deploy,daemonset -n nex-system
@@ -251,11 +251,11 @@ You can view the details of the cluster.
 * Platform
   * It shows the current platform type, agent and prometheus stack status.
 * Cluster Detail
-  * It shows the number of nodes that currently have agents deployed and the version information Kubernetes Account information installed.
+  * It shows the number of nodes that currently have agents deployed and the version information and Kubernetes Account information installed.
 * Tasks
   * It shows all Job and Task status performed by NexClipper.
 * Prometheus
-  * It shows the currently installed Prometheus stack. Also, it has the feature to expose externally accessible endpoints in the Prometheus ecosystem. Click on the ecosystem to view more detailed information, and you can see the each dashboard exposed on NodePort or LoadBalancer.
+  * It shows the current installed Prometheus stack. Also,it can expose externally accessible endpoints in Prometheus ecosystem. Click on each ecosystem to view more detailed information, and you can see  each dashboard exposed on NodePort or LoadBalancer.
 * Volumes
   * It shows the current PVs information and status for long-term storage.
 
@@ -263,7 +263,7 @@ Clicking the link or Health menu of Prometheus will take you to the Prometheus H
 
 ![img](../static/img/nc-prom-dashboard.png)
 
-By default, you can view the information in the cluster as follows.  
+By default, you can view the information in the cluster.  
 * Age(Cluster Age): Time elapsed since cluster creation
 * Cluster Status: Status of cluster nodes
   * All nodes are healthy - All Ready
@@ -286,15 +286,15 @@ By default, you can view the information in the cluster as follows.
 * API Server Status: Cluster API Server Status
 * API server total requests code: 5 minute average by Kubenetes API response code
 
-### Edit & Unit Test Prometheus & Alertmanager Config
+### Edit & Unit Test for Prometheus Config and Alertmanager Config
 
-Click the Config menu under Prometheus to modify the configuration in the currently provisioned state. Basically the feature is possible to edit config and rules(alert, recording) on the editor screen, and you can use the promtool test function to determine whether there is a problem with the unit test, and save and apply it if there is no problem.
+Click on `Config` under Prometheus to modify the configuration in the currently provisioned state. It allows you to edit config and rules(alert, recording) on the editor screen. And you will be able to use the promtool test function to determine whether there is a problem with the unit test. If there is no problem, just save and apply it. 
 
 ![img](../static/img/nc-prom-config.png)
 
 The functions that edit and test Prometheus Configurations are operated through `Edit`, `Save & Test`. This step checks for YAML syntax errors in the config and rules.
 
-When the test is successfully completed, the configuration will be temporarily stored if the test is passed as shown below, and it is not actually applied to the Prometheus cluster.
+After the test is successfully completed, the configuration will be temporarily stored if the test is passed, but it doesn't mean actually applied to the Prometheus cluster.
 
 ![img](../static/img/nc-config-test.png)
 
@@ -306,22 +306,22 @@ If there is no problem with the Configuration, apply it through `Apply & Reload`
 
 ![img](../static/img/nc-config-reload.png)
 
-The Alert Configuration, Alert-Rule, and Recording-Rule can also be modified, tested, and applied in the same way as above.
+The Alert Configuration, Alert-Rule, and Recording-Rule can also be modified, tested, and applied.
 
 ![img](../static/img/nc-am-config.png)
 
 ### Delete Cluster
 
-The NexClipper service will no longer be available after deleting a cluster. 
-For reuse, Cluster installation must be performed again. 
+NexClipper will no longer be available after deleting a cluster. 
+Cluster must be installed if you'd like to use again. 
 
 ![img](../static/img/nc-delete-cluster.png)
 
-After several steps including consent for deletion, you can delete a cluster.
+After several steps including consent, you can delete a cluster.
 
 ![img](../static/img/nc-delete-process.png)
 
-To delete completely NexClipper Product, you can run the following script.
+To delete NexClipper Suite completely, run the following script.
 
 ```sh
 curl -sL http://gg.gg/provbee-seeyou | NEXNS=nexclipper DEL=Y bash
