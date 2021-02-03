@@ -1,5 +1,5 @@
 ---
-id: intro
+id: intro_ko
 title: Introduction to NexClipper
 sidebar_label: Introduction to NexClipper
 slug: /
@@ -13,7 +13,7 @@ keywords:
 
 ## NexClipper
 
-### 미션(Mission)
+### Mission
 
 NexClipper는 고객의 클라우드 네이티브 인프라스트럭처를 쉽고 안정적인 방법으로 관리/모니터링하도록 돕습니다.
 
