@@ -69,12 +69,10 @@ NexClipper provides convenient functions related to queries and rules. Also, Pro
   - It is necessary to run a proper monitoring tool after the initial Kubernetes test or POC.
   - As Kubernetes ecosystem is getting more complicated with more OSS, it’s not easy to organize internal monitoring tools.
 
-- Providing advanced technologies essential to production environments 
+- Providing advanced technologies essential to production environments
   - MetricOps enables automation of all operation based on metrics, and ML-based prediction.
   - GitOps, without dependency on environments and neutral to SLO, easily execute deployment and roll-back.
 
-
 - Delivering software in any kind of environment.
-  - NexClipper SaaS platform can manage
-[Public | Private] cloud, and on-premise altogether.
+  - NexClipper SaaS platform can manage [Public | Private] cloud, and on-premise altogether.
   - As an ambassador to microservices, it provides efficient deployment and monitoring service for more efficient operation and business.
