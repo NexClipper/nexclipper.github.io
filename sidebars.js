@@ -9,32 +9,32 @@ module.exports = {
       items: [
         {
           type: 'link',
-          label: 'Klevr', 
+          label: 'Klevr🔗', 
           href: 'https://github.com/NexClipper/klevr' 
         },
         {
           type: 'link',
-          label: 'Provbee', 
+          label: 'Provbee🔗', 
           href: 'https://github.com/NexClipper/provbee' 
         },
         {
           type: 'link',
-          label: 'NexClipperBasic',
+          label: 'NexClipperBasic🔗',
           href: 'https://github.com/NexClipper/NexClipperBasic'
         },
         {
           type: 'link',
-          label: 'WebStork',
+          label: 'WebStork🔗',
           href: 'https://github.com/NexClipper/webstork'
         },
         {
           type: 'link',
-          label: 'ExporterHub',
+          label: 'ExporterHub🔗',
           href: 'https://github.com/NexClipper/exporterhub.io'
         },
         {
           type: 'link',
-          label: 'MetricOps',
+          label: 'MetricOps🔗',
           href: 'https://github.com/NexClipper/metric-operator'
         },
       ],
