@@ -13,12 +13,11 @@ keywords:
 
 ## NexClipper
 
-NexCloud is the first Korean company to become a silver member of CNCF in 2018,
-contributing to cloud native ecosystem.
+NexClipper is an Open Source project aimed at delivering production-ready Prometheus in enterprise environments.
 
 ### Mission
 
-NexCloud helps our customers to manage their Cloud Native infrastructure easily, reliably and at scale which leads to decreased downtime, lower operation costs, and improved business sustainability.
+NexClipper helps our customers to manage their Cloud Native infrastructure easily, reliably and at scale which leads to decreased downtime, lower operation costs, and improved business sustainability.
 
 ### Vision
 
