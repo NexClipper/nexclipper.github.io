@@ -4,8 +4,6 @@ title: NexClipper Docs Use Guide
 
 ---
 
-# NexClipper Docs Use Guide
-
 ```yaml
 kubectl get nodes
 ```
