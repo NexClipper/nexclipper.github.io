@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[70],{127:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"prom-con","name":"promcon","count":2,"permalink":"/blog/tags/prom-con"}')}}]);

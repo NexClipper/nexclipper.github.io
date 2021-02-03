@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{114:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"containers-monitoring","name":"containers monitoring","count":1,"permalink":"/blog/tags/containers-monitoring"}')}}]);
