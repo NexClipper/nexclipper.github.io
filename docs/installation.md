@@ -44,7 +44,7 @@ NexClipper Agent has been tested for Kubernetes version 1.15.12 or higher. Probl
 
 ### Minimum Requirements
 
-NexClipper runs in a Linux environment by default.
+NexClipper runs in a Linux environment.
 
 * Operating Systems : Linux(WSL included), MacOS 10.14+
 * Software
@@ -83,7 +83,7 @@ You might encounter problems if you install duplicates with an existing operatin
 
 ### Install NexClipper
 
-Go to [https://nexclipper.github.io/](https://nexclipper.github.io/) and click on the `Login`.
+Go to [https://nexclipper.github.io/](https://nexclipper.github.io/) and click on `Login`.
 
 ![img](../static/img/nc-start.png)
 
@@ -98,11 +98,11 @@ Currently, we only support e-mail and Google Authentication (including GSuite). 
 
 Log in with your Account.
 
-For first-time users, you can check the Welcome screen as shown below.
+Welcome page will be displayed for first-time users.
 
 ![img](../static/img/nc-welcome.png)
 
-NexClipper is similar to Kubernetes cluster, but with a different concept. It works based on a logical group called a Cluster where a separate NexClipper Suite is installed. Follow these steps to issue API KEY mapped to your account.
+NexClipper is similar to Kubernetes cluster, but with a different concept. It works based on a logical group called a Cluster where a separate NexClipper Suite is installed. In order to issue API KEY mapped to your account, follow these steps.
 
 Type a Cluster Name. The Cluster Name is a value shown in the list and is an input value for the user to distinguish the cluster.
 
@@ -116,7 +116,7 @@ Currently, only Kubernetes clusters are supported. We will also provide a Bareme
 
 ![img](../static/img/nc-select-platform.png)
 
-A bootstrap scripts will be created to install on the selected platform.
+A bootstrap script will be created to install on the selected platform.
 
 ![img](../static/img/nc-bootstrap.png)
 
@@ -201,7 +201,7 @@ The default installation options are as follows.
 * Size of Wal(GB): Prometheus WAL Volume Size(Default: 2Gi)
 * Grafana Admin Password : Grafana initial password(Default: admin)
 
-By default, the `nexclipper` Namespace will have the following Prometheus ecosystem.  
+The `nexclipper` Namespace will have the following Prometheus ecosystem.  
 
 * prometheus
 * node-exporter
@@ -263,7 +263,7 @@ Clicking the link or Health menu of Prometheus will take you to the Prometheus H
 
 ![img](../static/img/nc-prom-dashboard.png)
 
-By default, you can view the information in the cluster.  
+You can view the information in the cluster.  
 * Age(Cluster Age): Time elapsed since cluster creation
 * Cluster Status: Status of cluster nodes
   * All nodes are healthy - All Ready
@@ -288,17 +288,17 @@ By default, you can view the information in the cluster.
 
 ### Edit & Unit Test for Prometheus Config and Alertmanager Config
 
-Click on `Config` under Prometheus to modify the configuration in the currently provisioned state. It allows you to edit config and rules(alert, recording) on the editor screen. And you will be able to use the promtool test function to determine whether there is a problem with the unit test. If there is no problem, just save and apply it. 
+Click on `Config` under Prometheus to modify the configuration in the currently provisioned state. It allows you to edit config and rules(alert, recording) on the editor screen. And you can use the `promtool test` to determine whether there is a problem with the unit test. If there is no problem, just save and apply it. 
 
 ![img](../static/img/nc-prom-config.png)
 
 The functions that edit and test Prometheus Configurations are operated through `Edit`, `Save & Test`. This step checks for YAML syntax errors in the config and rules.
 
-After the test is successfully completed, the configuration will be temporarily stored if the test is passed, but it doesn't mean actually applied to the Prometheus cluster.
+After the test passed, the configuration will be temporarily stored, but it doesn't mean actually applied to the Prometheus cluster. 
 
 ![img](../static/img/nc-config-test.png)
 
-Let's take a look at cases where the test fails. For example, `global.scrape_timeout`, if you enter a value in above 60 seconds, it is considered abnormal and the test fails. In the case of failure, the related log is printed on the screen and shown.
+Let's take a look at cases where the test failed. For example, `global.scrape_timeout`, you should enter a value within 60 seconds. Otherwise,it is considered abnormal and the test fails. In the case of failure, the related log is printed on the page.
 
 ![img](../static/img/nc-config-fail.png)  
 
@@ -312,7 +312,7 @@ The Alert Configuration, Alert-Rule, and Recording-Rule can also be modified, te
 
 ### Delete Cluster
 
-NexClipper will no longer be available after deleting a cluster. 
+NexClipper will no longer be available after the cluster is deleted. 
 Cluster must be installed if you'd like to use again. 
 
 ![img](../static/img/nc-delete-cluster.png)

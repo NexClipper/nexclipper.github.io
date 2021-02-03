@@ -41,12 +41,11 @@ The following features are currently being developed.
 Prometheus ecosystem can be quickly and easily deployed in any production environment. ([https://github.com/NexClipper/provbee](https://github.com/NexClipper/provbee))  
 - NexClipper Cloud allows you to quickly and easily deploy Prometheus ecosystem through a simple installation command.
 - NexClipper On-Premise provides a separate Prometheus server cluster and various ecosystem installation and operation environments in multiple multi-cloud environments.
-- Long-term storage can be configured based on open source softwares. (Avoiding vendor dependency)
-- Provisioned based on PromScale, which is basically composed of TimescaleDB, and storage period and capacity can be increased whenever necessary.
+- Long-term storage can be configured based on open source softwares. (To avoid vendor dependency)
+- Provisioned based on PromScale, which is composed of TimescaleDB, and storage period and capacity can be increased whenever necessary.
  
-
 #### Klevr
-Similar to the Bastion Host role, even in a blocking environment such as a firewall, the open source-based Task Manager([https://github.com/NexClipper/klevr](https://github.com/NexClipper/klevr)) executes asynchronous jobs, so it can be operated in a private cloud environment.  
+Similar to the Bastion Host role, even in a private network such as a firewall, the open source-based Task Manager([https://github.com/NexClipper/klevr](https://github.com/NexClipper/klevr)) executes asynchronous jobs, so it can be operated in a private cloud environment.  
 - Separate charts or resources can be directly distributed, and operation is possible in a private environment that is isolated for security reasons.
 - Cluster management or operation is possible without direct access to KubeAPI.
 - Remotely modify and manage Prometheus and AlertManager config.
@@ -71,10 +70,10 @@ NexClipper provides convenient functions related to queries and rules. Also, Pro
   - It is necessary to run a proper monitoring tool after the initial Kubernetes test or POC.
   - As Kubernetes ecosystem is getting more complicated with more OSS, it’s not easy to organize internal monitoring tools.
 
-- Providing advanced technologies essential to production environments
+- Providing advanced technologies essential for production environments
   - MetricOps enables automation of all operation based on metrics, and ML-based prediction.
   - GitOps, without dependency on environments and neutral to SLO, easily execute deployment and roll-back.
 
-- Delivering software in any kind of environment.
+- Delivering software in any types of environment.
   - NexClipper SaaS platform can manage [Public | Private] cloud, and on-premise altogether.
   - As an ambassador to microservices, it provides efficient deployment and monitoring service for more efficient operation and business.
