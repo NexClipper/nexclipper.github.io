@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nexclipper.github.io/blog</id>
+    <title>NexClipper Blog</title>
+    <updated>2020-11-09T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://nexclipper.github.io/blog"/>
+    <subtitle>NexClipper Blog</subtitle>
+    <icon>https://nexclipper.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Prometheus at NexClipper]]></title>
+        <id>Prometheus at NexClipper</id>
+        <link href="https://nexclipper.github.io/blog/2020/11/09/prometheus-at-nexcilpper"/>
+        <updated>2020-11-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Summarize the issues that arise in operating Prometheus at the enterprise level and introduce NexClipper's development roadmap to solve them.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prometheus Exporter & ExporterHub (Eng.)]]></title>
+        <id>Prometheus Exporter &amp; ExporterHub (Eng.)</id>
+        <link href="https://nexclipper.github.io/blog/2020/09/25/prometheus-exporter-exporterhub-en"/>
+        <updated>2020-09-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Talk about client libraries and exporters that are essential components of the Prometheus open source, as well as [ExporterHub.io] (http://exporterhub.io) currently under development and a roadmap for NexClipper in the future.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prometheus Exporter & ExporterHub]]></title>
+        <id>Prometheus Exporter &amp; ExporterHub</id>
+        <link href="https://nexclipper.github.io/blog/2020/09/03/prometheus-exporter-exporterhub"/>
+        <updated>2020-09-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[프로메테우스 오픈소스의 필수 구성요소인 클라이언트 라이브러리, 익스포터에 대해서 이야기 하고 현재 개발 중인 [ExporterHub.io](http://exporterhub.io) 과 향후 NexClipper의 로드맵도 같이 설명합니다.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prometheus ExporterHub.io release]]></title>
+        <id>Prometheus ExporterHub.io release</id>
+        <link href="https://nexclipper.github.io/blog/2020/08/14/prometheus-exporterhub-io-release"/>
+        <updated>2020-08-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexCloud announced the release of "Prometheus Exporter Manager", which is a part of the NexClipper that is still under development, on "exporterhub.io" and Github.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloud-native 102: 경험을 기반으로 해석한 The 12-factor app #1]]></title>
+        <id>Cloud-native 102: 경험을 기반으로 해석한 The 12-factor app #1</id>
+        <link href="https://nexclipper.github.io/blog/2020/08/13/cloud-native-102-the-12-factor-app-1"/>
+        <updated>2020-08-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[_ https://imgur.com/gallery/V9nAWbd_]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What is MetricOps?]]></title>
+        <id>What is MetricOps?</id>
+        <link href="https://nexclipper.github.io/blog/2020/07/27/what-is-metricops"/>
+        <updated>2020-07-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[안녕하세요. 넥스클라우드 김진웅입니다.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[은유적으로 알아보는 클라우드와 클라우드-네이티브의 차이]]></title>
+        <id>은유적으로 알아보는 클라우드와 클라우드-네이티브의 차이</id>
+        <link href="https://nexclipper.github.io/blog/2020/07/17/cloud-difference"/>
+        <updated>2020-07-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[클라우드를 인프라 개념으로써 기존의 어플리케이션을 그대로 사용하여 서비스 하기 보다는, 인프라를 유기적인 개념으로 생각하여 어플리케이션을 설계하고 서비스에 투입 할 수 있어야 한다.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prometheus Monitoring : Pros and Cons]]></title>
+        <id>Prometheus Monitoring : Pros and Cons</id>
+        <link href="https://nexclipper.github.io/blog/2020/06/23/prometheus-monitoring-pros-and-cons"/>
+        <updated>2020-06-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[안녕하세요. 넥스클라우드 김진웅입니다.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA['2020 오픈소스 컨트리뷰톤' 참가]]></title>
+        <id>'2020 오픈소스 컨트리뷰톤' 참가</id>
+        <link href="https://nexclipper.github.io/blog/2020/06/12/2020-oss-contributhon"/>
+        <updated>2020-06-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexClipper 가 '2020 오픈소스 컨트리뷰톤'에 참가합니다.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infrastructure Monitoring]]></title>
+        <id>Infrastructure Monitoring</id>
+        <link href="https://nexclipper.github.io/blog/2020/06/08/infrastructure-monitoring"/>
+        <updated>2020-06-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[많은 시스템들이 마이크로서비스 아키텍처 기반으로 변해가는 단계에 있습니다.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sketch: NexClipper at K8S Forum Seoul 2019]]></title>
+        <id>Sketch: NexClipper at K8S Forum Seoul 2019</id>
+        <link href="https://nexclipper.github.io/blog/2019/12/13/sketch-nexclipper-at-k8s-forum-seoul-2019"/>
+        <updated>2019-12-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[On Dec. 09, 2019, we exhibited at K8S Forum Seoul 2019 event held at Yongsan Dragon City.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexClipper Exhibited at KubeCon + CloudNativeCon North America 2019 - San Diego]]></title>
+        <id>NexClipper Exhibited at KubeCon + CloudNativeCon North America 2019 - San Diego</id>
+        <link href="https://nexclipper.github.io/blog/2019/12/12/nexclipper-exhibited-at-kubecon-cloudnativecon-north-america-2019-san-diego"/>
+        <updated>2019-12-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Now back to Seoul, Korea, we would like to wrap up and share what we gained out of exhibition at KubeCon + CloudNativeCon North America 2019 - San Diego (Nov. 18-21, 2019).]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Come Meet Us at KubeCon + CloudNativeCon North America - 2019, San Diego!]]></title>
+        <id>Come Meet Us at KubeCon + CloudNativeCon North America - 2019, San Diego!</id>
+        <link href="https://nexclipper.github.io/blog/2019/11/15/come-meet-us-at-kubecon-cloudnativecon-north-america-2019-san-diego"/>
+        <updated>2019-11-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexClipper is exhibiting at KubeCon + CloudNativeCon North America - 2019 taking place at San Diego Convention Center throughout November 18 to 21, 2019 (we're only 3 nights away).]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Report: NexClipper at PromCon EU 2019, Munich (Nov. 07-08, 2019)]]></title>
+        <id>Report: NexClipper at PromCon EU 2019, Munich (Nov. 07-08, 2019)</id>
+        <link href="https://nexclipper.github.io/blog/2019/11/15/report-nexclipper-at-promcon-eu-2019-munich-nov-07-08-2019"/>
+        <updated>2019-11-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are now back to Seoul writing a brief post-event report on our attendance to PromCon EU 2019 held in Munich, on Nov. 07 & 08, 2019.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meet NexClipper at PromCon EU 2019, Munich!]]></title>
+        <id>Meet NexClipper at PromCon EU 2019, Munich!</id>
+        <link href="https://nexclipper.github.io/blog/2019/11/04/meet-nexclipper-at-promcon-eu-2019-munich"/>
+        <updated>2019-11-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We’re excited about this opportunity to present our NexClipper project we’re in progress in link with Prometheus and OpenMetrics to the community and to network with the professionals working around Prometheus whilst having access to the latest issues and trends at PromCon EU 2019.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexClipper Joined the Open Invention Network]]></title>
+        <id>NexClipper Joined the Open Invention Network</id>
+        <link href="https://nexclipper.github.io/blog/2019/11/01/nexclipper-joined-the-open-invention-network"/>
+        <updated>2019-11-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are proudly announcing that NexClipper (as of October 29, 2019) is now a member project of the Open Invention Network (OIN, hereon), the world-largest community committed to protecting Linux/OSS-based programs from patent risks.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexClipper Exhibited at SOSCON 2019]]></title>
+        <id>NexClipper Exhibited at SOSCON 2019</id>
+        <link href="https://nexclipper.github.io/blog/2019/10/22/nexclipper-exhibited-at-soscon-2019"/>
+        <updated>2019-10-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- 2,000+ Participated at the Event, Sharing Knowledge & Experience in Open Source]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes Monitoring with NexClipper]]></title>
+        <id>Kubernetes Monitoring with NexClipper</id>
+        <link href="https://nexclipper.github.io/blog/2019/03/20/kubernetes-monitoring-with-nexclipper"/>
+        <updated>2019-03-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Kubernetes Monitoring with NexClipper]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Positive Impacts on Open Source in the Enterprise]]></title>
+        <id>The Positive Impacts on Open Source in the Enterprise</id>
+        <link href="https://nexclipper.github.io/blog/2019/03/20/the-positive-impacts-on-open-source-in-the-enterprise"/>
+        <updated>2019-03-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Come visit us at https://github.com/NexClipper/NexClipper]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Concerns with Running Containers]]></title>
+        <id>Concerns with Running Containers</id>
+        <link href="https://nexclipper.github.io/blog/2019/02/22/concerns-with-running-containers"/>
+        <updated>2019-02-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What are the concerns in using containers and how NexClipper deals with them.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How Useful is AIOps?]]></title>
+        <id>How Useful is AIOps?</id>
+        <link href="https://nexclipper.github.io/blog/2018/10/15/how-useful-is-aiops"/>
+        <updated>2018-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As IT operations have rapidly evolved for the decades, the gigantic amount of data involved with your application infrastructure is almost incomprehensive. In order for organizations to deal with this, they started to keep an eye on AIOps(Artificial Intelligence for IT Operations) which leverages AI to IT Operations.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexCloud to Join Cloud native Computing Foundation(CNCF)]]></title>
+        <id>NexCloud to Join Cloud native Computing Foundation(CNCF)</id>
+        <link href="https://nexclipper.github.io/blog/2018/09/18/nexcloud-to-join-cloud-native-computing-foundationcncf"/>
+        <updated>2018-09-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexCloud, providing NexClipper which is the container monitoring and intelligence operation supporting solution, has joined the Cloud Native Computing Foundation (CNCF) as a silver membership.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexClipper’s Robust Trend Forecasting (RTF) Algorithm For Disk-Full Time Estimation]]></title>
+        <id>NexClipper’s Robust Trend Forecasting (RTF) Algorithm For Disk-Full Time Estimation</id>
+        <link href="https://nexclipper.github.io/blog/2018/08/21/nexclippers-robust-trend-forecasting-rtf-algorithm-for-disk-full-time-estimation"/>
+        <updated>2018-08-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexClipper’s Robust Trend Forecasting (RTF) Algorithm for Disk-Full Time Estimation]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexClipper’s AI Analytics Menu]]></title>
+        <id>NexClipper’s AI Analytics Menu</id>
+        <link href="https://nexclipper.github.io/blog/2018/08/09/1019"/>
+        <updated>2018-08-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In “AI Analytics”, we provide three submenus as below, please see below for brief descriptions.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Launching online beta service - NexClipper Cloud for container monitoring and performance management]]></title>
+        <id>Launching online beta service - NexClipper Cloud for container monitoring and performance management</id>
+        <link href="https://nexclipper.github.io/blog/2018/08/02/launching-online-beta-service-nexclipper-cloud-for-container-monitoring-and-performance-management"/>
+        <updated>2018-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are pleased to announce that our NexClipper online beta service(SaaS) has launched.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Concept Of NexClipper’s Anomaly Detection Algorithm]]></title>
+        <id>The Concept Of NexClipper’s Anomaly Detection Algorithm</id>
+        <link href="https://nexclipper.github.io/blog/2018/07/20/the-concept-of-nexclippers-anomaly-detection-algorithm"/>
+        <updated>2018-07-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[By Kevin Ko , PhD, Data Scientist]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.]]></title>
+        <id>NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.</id>
+        <link href="https://nexclipper.github.io/blog/2018/07/11/nexcloudnexclippers-dc-os-on-premise-version-is-now-listed-on-dc-os-service-catalog"/>
+        <updated>2018-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.]]></title>
+        <id>NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.</id>
+        <link href="https://nexclipper.github.io/blog/2018/07/11/nexclouds-nexclipper-was-selected-as-a-member-of-2018-gsip-by-nipa-of-korea"/>
+        <updated>2018-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexCloud's NexClipper was selected as a member of 2018 GSIP(Global SaaS Incubating Projects) by NIPA(National IT Industry Promotion Agency) of Korea.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexGate is NexCloud’s API Gateway made of NexEureka and NexZUUL]]></title>
+        <id>NexGate is NexCloud’s API Gateway made of NexEureka and NexZUUL</id>
+        <link href="https://nexclipper.github.io/blog/2018/07/10/bitcoin-surges"/>
+        <updated>2018-07-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexGate]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing how to monitor container in 5 minutes with NexClipper light]]></title>
+        <id>Introducing how to monitor container in 5 minutes with NexClipper light</id>
+        <link href="https://nexclipper.github.io/blog/2018/07/10/introducing-how-to-monitor-container-in-5-minutes-with-nexclipper-light"/>
+        <updated>2018-07-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What is NexClipper?]]></summary>
+    </entry>
+</feed>
