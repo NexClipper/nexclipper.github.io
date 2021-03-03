@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[89],{159:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"prom-con-eu-2019","name":"promcon eu 2019","count":2,"permalink":"/blog/tags/prom-con-eu-2019"}')}}]);
