@@ -16,6 +16,11 @@ keywords:
 NexClipper runs in the type of DaemonSet, StatefulSet, and Deployment within your own Kubernetes cluster.  
 All resources run in the nex-system, nexclipper Namespace by default, and contain ecosystem related to Prometheus.
 
+If you want to see the quick start run through video, check out below link:
+
+[![quick](http://img.youtube.com/vi/pGSjC2g2Hn0/0.jpg)](https://youtu.be/pGSjC2g2Hn0) 
+
+
 ---
 
 ## Check Environment
