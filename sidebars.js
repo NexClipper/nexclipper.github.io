@@ -4,7 +4,7 @@ module.exports = {
       'Documentation': ['intro','quickstart'],
     },
     {
-      'Guide': ['install'],
+      'Guide': ['components', 'requirements', 'requirements_instance', 'health', 'config', 'alert','globalview'],
     },
     {
       type: 'category',
@@ -42,8 +42,8 @@ module.exports = {
         },
       ],
     },
-    {
-      'Docs Use Guide': ['info', 'style'],
-    },
+/*     {
+      'OpenSource': ['credits', 'license'],
+    }, */
   ],
 };
