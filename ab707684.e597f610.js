@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[83],{153:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"kubernetes-monitoring","name":"kubernetes monitoring","count":1,"permalink":"/blog/tags/kubernetes-monitoring"}')}}]);

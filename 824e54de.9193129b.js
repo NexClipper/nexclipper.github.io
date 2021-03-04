@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[59],{130:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"soscon-2019","name":"soscon-2019","count":1,"permalink":"/blog/tags/soscon-2019"}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{106:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"nex-zuul","name":"nexzuul","count":1,"permalink":"/blog/tags/nex-zuul"}')}}]);
