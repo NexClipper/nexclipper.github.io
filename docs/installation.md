@@ -53,7 +53,7 @@ NexClipper runs in a Linux environment.
   * ssh-keygen
 * Target Kubernetes Cluster : 1.15.12 or higher
 * Firewall
-  * Client(WebService) -> Outbound (Destination : console.nexclipper.io, Port: 80,443,8080
+  * Client(WebService) -> Outbound (Destination : console.nexclipper.io, Port: 80,443,8080)
   * NexClipper Agent(DaemonSet) -> Outbount (Destination : console.nexclipper.io, Port: 8090)
 ---
 

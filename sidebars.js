@@ -1,7 +1,10 @@
 module.exports = {
   someSidebar: [
     {
-      'Getting Started': ['intro', 'install'],
+      'Documentation': ['intro','quickstart'],
+    },
+    {
+      'Guide': ['install'],
     },
     {
       type: 'category',
@@ -19,8 +22,8 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'NexClipperBasic ✈︎',
-          href: 'https://github.com/NexClipper/NexClipperBasic'
+          label: 'MetricArk ✈︎',
+          href: 'https://github.com/NexClipper/MetricArk'
         },
         {
           type: 'link',
