@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[95],{165:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"prometheus","name":"prometheus","count":8,"permalink":"/blog/tags/prometheus"}')}}]);
