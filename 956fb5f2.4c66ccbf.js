@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[74],{145:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"kube-con","name":"kubecon","count":2,"permalink":"/blog/tags/kube-con"}')}}]);

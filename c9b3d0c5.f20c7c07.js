@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[108],{179:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"nex-eureka","name":"nexeureka","count":1,"permalink":"/blog/tags/nex-eureka"}')}}]);
