@@ -15,6 +15,8 @@ All resources run in the nex-system, nexclipper Namespace by default, and contai
 |---|---|---|
 |Klevr Agent|DaemonSet|Communicate with NexClipper Manager|
 |Provbee|Deployment|Provisioning and Task Processing|
+|MetricArk|Deployment|Basic Dashboard & Serving composite API|
+|WebStork|Deployment|Web tunnel for Cloud-native application|
 |Prometheus|Deployment|Metric-Based Monitoring Tool|
 |node-exporter|DaemonSet|Machine Metric Collection Exporter|
 |Grafana|Deployment|Visualization Dashboard Tool|
@@ -25,9 +27,7 @@ All resources run in the nex-system, nexclipper Namespace by default, and contai
 |Promscale|Deployment|Prometheus Metric Analysis Tool|
 |TimescaleDB|StatefulSet|Time Series-Based SQL DB|
 |MetricOperator|Deployment|Caching Cluster State|
-|NexCloud Basic|Deployment|Basic Dashboard|
-|ExporterHub(Preparing)|Deployment|Exporter curation page|
 
 :::note
-NexClipper Agent has been tested for Kubernetes version 1.15.12 or higher. Problems may occur in lower versions.
+NexClipper Components has been tested for Kubernetes version 1.15.12 or higher. Problems may occur in lower versions.
 :::

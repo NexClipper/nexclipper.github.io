@@ -1,20 +1,23 @@
 ---
 id: requirements
-title: Requirements at Kubernetes
+title: Requirements with Kubernetes
 hide_title: true
 description: 
 ---
 
 ## Minimum Requirements
 
-NexClipper runs in a Linux environment.
+NexClipper runs in a Kubernetes environment.
 
-* Operating Systems : Linux(WSL included), MacOS 10.14+
-* Software
+* Target Kubernetes Cluster : 1.15.12 or higher
+* Cluster Hardware
+  * RAM: 4GB Minimum (Recommended 6GB)
+  * CPU: 2Core Minimum
+* Bastion Host : Linux(WSL included), MacOS 10.14+
+* Bastion Software
   * bash or zsh
   * curl
   * ssh-keygen
-* Target Kubernetes Cluster : 1.15.12 or higher
 * Firewall
   * Client(WebService) -> Outbound (Destination : console.nexclipper.io, Port: 80,443,8080)
   * NexClipper Agent(DaemonSet) -> Outbount (Destination : console.nexclipper.io, Port: 8090)

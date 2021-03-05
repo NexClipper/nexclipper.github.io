@@ -1,44 +1,31 @@
 ---
 id: requirements_instance
-title: Requirements at Instances
+title: Requirements without Kubernetes
 hide_title: true
 description: 
 ---
 
 ## Minimum Requirements
 
-NexClipper runs in a Linux environment.
+NexClipper without Kubernetes runs in a Linux environment.
 
-* Operating Systems : Linux(WSL included), MacOS 10.14+
+* Operating Systems : Modern Linux systems(WSL, Alpine, Raspbian Buster included)
 * Software
   * bash or zsh
   * curl
   * ssh-keygen
-* Target Kubernetes Cluster : 1.15.12 or higher
+* Hardware
+  * RAM: 4GB Minimum
+  * CPU: 2Core Minimum
 * Firewall
   * Client(WebService) -> Outbound (Destination : console.nexclipper.io, Port: 80,443,8080)
   * NexClipper Agent(DaemonSet) -> Outbount (Destination : console.nexclipper.io, Port: 8090)
 ---
 
-## Check Environment
+## Quick Start Environment
 
-There are two options for installation.  
+If you want to install in a Linux environment, change `K3S_SET` ENV in a generated script from `N` to `Y`. 
 
-1. Remote Kubernetes
-   * An environment that can communicate remotely to kube-apiserve (kubeconfig environment)
-2. Local Kubernetes
-   * When running locally, such as Docker Desktop, Minikube, K3s, MicroK8s, etc.
-
-
-Run the following command to check the currently connected cluster in an environment that can run bash or zsh. If you have configured your Kubernetes environment with docker-desktop, you are expected to get results similar to the following:
-
-```bash
-$ kubectl cluster-info
-Kubernetes master is running at https://kubernetes.docker.internal:6443
-KubeDNS is running at https://kubernetes.docker.internal:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+```sh
+curl -sL gg.gg/provbee | TAGPROV=0.5 TAGKLEVR=0.2.8-SNAPSHOT K3S_SET=N K_API_KEY="ba567a96551042b7baed32ec81b02f40" K_PLATFORM="kubernetes" K_MANAGER_URL="https://dev.nexclipper.io:8080/klevr" K_ZONE_ID="589" K_CLUSTER_NAME="123123r5" bash
 ```
-
-:::caution
-You might encounter problems if you install duplicates with an existing operating Prometheus Operator. NexClipper distributes and manages Prometheus-related ecosystem based on Helm.
-:::
-

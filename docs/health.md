@@ -19,8 +19,8 @@ You can view the details of the cluster.
   * It shows the number of nodes that currently have agents deployed and the version information and Kubernetes Account information installed.
 * Tasks
   * It shows all Job and Task status performed by NexClipper.
-* Prometheus
-  * It shows the current installed Prometheus stack. Also,it can expose externally accessible endpoints in Prometheus ecosystem. Click on each ecosystem to view more detailed information, and you can see  each dashboard exposed on NodePort or LoadBalancer.
+* Stacks
+  * It shows the current installed Prometheus stacks. Also,it can expose externally accessible endpoints in Prometheus ecosystem. Click on each ecosystem to view more detailed information, and you can see  each dashboard exposed on NodePort or LoadBalancer.
 * Volumes
   * It shows the current PVs information and status for long-term storage.
 
