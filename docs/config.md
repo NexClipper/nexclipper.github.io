@@ -24,7 +24,3 @@ Let's take a look at cases where the test failed. For example, `global.scrape_ti
 If there is no problem with the Configuration, apply it through `Apply & Reload` and restart the Prometheus instance.
 
 ![img](../static/img/nc-config-reload.png)
-
-The Alert Configuration, Alert-Rule, and Recording-Rule can also be modified, tested, and applied.
-
-![img](../static/img/nc-am-config.png)
