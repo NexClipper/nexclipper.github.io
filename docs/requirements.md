@@ -28,7 +28,7 @@ NexClipper runs in a Kubernetes environment.
 There are two options for installation.  
 
 1. Remote Kubernetes
-   * An environment that can communicate remotely to kube-apiserve (kubeconfig environment)
+   * An environment that can communicate remotely to kube-apiserver (kubeconfig environment)
 2. Local Kubernetes
    * When running locally, such as Docker Desktop, Minikube, K3s, MicroK8s, etc.
 
