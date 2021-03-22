@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nexclipper.github.io/blog</id>
     <title>NexClipper Blog</title>
-    <updated>2020-11-09T00:00:00.000Z</updated>
+    <updated>2021-03-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nexclipper.github.io/blog"/>
     <subtitle>NexClipper Blog</subtitle>
     <icon>https://nexclipper.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[values-of-nexcilpper]]></title>
+        <id>values-of-nexcilpper</id>
+        <link href="https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper"/>
+        <updated>2021-03-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[---]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Prometheus at NexClipper]]></title>
         <id>Prometheus at NexClipper</id>

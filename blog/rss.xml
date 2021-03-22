@@ -4,9 +4,16 @@
         <title>NexClipper Blog</title>
         <link>https://nexclipper.github.io/blog</link>
         <description>NexClipper Blog</description>
-        <lastBuildDate>Mon, 09 Nov 2020 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[values-of-nexcilpper]]></title>
+            <link>https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper</link>
+            <guid>values-of-nexcilpper</guid>
+            <pubDate>Mon, 22 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+        </item>
         <item>
             <title><![CDATA[Prometheus at NexClipper]]></title>
             <link>https://nexclipper.github.io/blog/2020/11/09/prometheus-at-nexcilpper</link>
