@@ -1,5 +1,5 @@
 ---
-title: "Values of NexClipper"
+title: "NexClipper의 가치"
 author: Jinwoong Kim
 author_title: NexClipper
 author_url: https://github.com/ddiiwoong
