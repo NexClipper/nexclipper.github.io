@@ -8,11 +8,11 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[values-of-nexcilpper]]></title>
+            <title><![CDATA[Values of NexClipper]]></title>
             <link>https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper</link>
-            <guid>values-of-nexcilpper</guid>
+            <guid>Values of NexClipper</guid>
             <pubDate>Mon, 22 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[---]]></description>
+            <description><![CDATA[NexClipper의 서비스 아이덴티티와 전달하고자 하는 가치]]></description>
         </item>
         <item>
             <title><![CDATA[Prometheus at NexClipper]]></title>

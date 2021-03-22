@@ -10,16 +10,16 @@
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-122075277-7","auto"),ga("set","anonymizeIp",!0),ga("send","pageview")</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 <link rel="search" type="application/opensearchdescription+xml" title="NexClipper" href="/opensearch.xml"><title data-react-helmet="true">Getting Started Guides (Ko) | NexClipper</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="current"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Getting Started Guides (Ko) | NexClipper"><meta data-react-helmet="true" name="description" content="Getting Started with NexClipper Cloud"><meta data-react-helmet="true" property="og:description" content="Getting Started with NexClipper Cloud"><meta data-react-helmet="true" name="keywords" content="guide,installation,setup,getting started,nexclipper"><meta data-react-helmet="true" property="og:url" content="https://nexclipper.github.io/docs/start"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="preconnect" href="https://BH4D9OD16A-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://nexclipper.github.io/docs/start"><link rel="stylesheet" href="/styles.050a3dd6.css">
-<link rel="preload" href="/styles.9a04161d.js" as="script">
-<link rel="preload" href="/runtime~main.3399452a.js" as="script">
-<link rel="preload" href="/main.f577c282.js" as="script">
-<link rel="preload" href="/1.9cf54e17.js" as="script">
-<link rel="preload" href="/2.053ed736.js" as="script">
-<link rel="preload" href="/141.010058a5.js" as="script">
-<link rel="preload" href="/144.e3e504f9.js" as="script">
-<link rel="preload" href="/935f2afb.7636844a.js" as="script">
-<link rel="preload" href="/17896441.236c65f5.js" as="script">
-<link rel="preload" href="/98ce8162.ce019c31.js" as="script">
+<link rel="preload" href="/styles.b2c46d75.js" as="script">
+<link rel="preload" href="/runtime~main.80cf83b0.js" as="script">
+<link rel="preload" href="/main.ce46df5d.js" as="script">
+<link rel="preload" href="/1.76b3ffb4.js" as="script">
+<link rel="preload" href="/2.017ba80c.js" as="script">
+<link rel="preload" href="/143.84e25da1.js" as="script">
+<link rel="preload" href="/146.f32fb5f5.js" as="script">
+<link rel="preload" href="/935f2afb.b224196e.js" as="script">
+<link rel="preload" href="/17896441.02c32073.js" as="script">
+<link rel="preload" href="/98ce8162.f2463f09.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -49,15 +49,15 @@ deployment.apps/nc-promscale                 1/1     1            1           10
 NAME                              READY   AGE
 statefulset.apps/nc-timescaledb   1/1     106s
 </code></pre><p>다시 콘솔로 돌아와 프로비저닝된 Cluster 목록을 확인할 수 있습니다.   </p><p><img alt="img" src="/assets/images/nc-cluster-dashboard-e5ba29e44d60dfc270dda8bb2629926d.png"></p><p>해당 클러스터의 상세 내역을 확인할 수 있습니다.</p><ul><li>Platform<ul><li>현재 플랫폼의 종류와 에이전트, 프로메테우스 상태를 보여줍니다.</li></ul></li><li>Install Config<ul><li>초기 설치 스크립트를 확인할 수 있습니다.</li></ul></li><li>Tasks<ul><li>NexClipper에서 수행되는 모든 Job과 Task 상태를 보여줍니다. </li></ul></li><li>Cluster Detail<ul><li>Cluster 상태 정보로 현재는 Agent가 배포된 Node 대수와 버전정보 설치된 쿠버네티스 어카운트 정보를 보여줍니다.</li></ul></li><li>Prometheus<ul><li>현재 설치된 스택과 버전 정보를 보여줍니다.</li></ul></li></ul><p>활성화된 좌측의 프로메테우스 아이콘을 클릭하면 프로메테우스 대시보드로 이동합니다.  </p><p><img alt="img" src="/assets/images/nc-prom-dashboard-e85c159e6a124e7bf8df551733e27afd.png"></p><p>기본적으로 다음과 같이 클러스터의 정보를 확인할 수 있습니다.  </p><ul><li>Age(Cluster Age): 클러스터 생성후 경과된 시간</li><li>Cluster Status: 클러스터 상태<ul><li>모든 노드 정상 - All Ready, 일부 정상 - Partially Ready, 모든 노드 비정상 - Not Ready</li></ul></li><li>Nodes: 노드 개수</li><li>Unavaliable Node: 비정상 노드 개수</li><li>Namespaces: 네임스페이스 개수</li><li>Cluster Pod Usage: 클러스터 파드 사용량</li><li>Cluster CPU Usage: 클러스터 CPU 사용량</li><li>Cluster Memory Usage: 클러스터 메모리 사용량</li><li>Cluster Disk Usage: 클러스터 디스크 사용량</li><li>Pods: 활성화된 파드 개수</li><li>Restarted Pods(30m): 30분간 재시작된 파드 개수</li><li>Failed Pods: 현재 Failed 상태의 파드 개수</li><li>Pending Pods: 현재 Pending 상태의 파드 개수</li><li>PVCs: PersistentVolumeClaim 개수</li><li>Prometheus Status: 프로메테우스 현재 상태</li><li>Alertmanager Status: Alertmanager 현재 상태</li><li>API Server Status: 클러스터 API 서버 상태</li><li>API server total requests code: 클러스터 API responce 코드별 5분 평균</li></ul><p>더 상세한 메트릭 정보를 확인하기 위해 그라파나 아이콘을 클릭하게 되면 NodePort로 expose된 대시보드를 확인할 수 있습니다.  </p><p>기본 계정 정보는 입력값이 없었다면 아이디, 패스워드 동일하게 <code>admin:admin</code>으로 설정됩니다.</p><p><img alt="img" src="/assets/images/nc-grafana-4d2415ec7fd4ca7b014bb59cc699422b.png"></p><p>프로메테우스 Configuration 메뉴를 클릭하면 현재 프로비저닝된 상태의 설정을 수정할 수 있는 화면입니다. 기본적인 yaml의 문법 체크는 에디터 화면에서 가능하며, promtool 테스트 기능을 화면에 적용하여 기본적인 프로메테우스 설정에 문제여부를 파악하고 이상이 없으면 저장 및 적용이 가능합니다.  </p><p><img alt="img" src="/assets/images/nc-prom-config-23b22d5d0f80a44b56d038e0507a01c9.png"></p><p>프로메테우스 컨피그를 에디트 하고 테스트 하는 기능은 <code>Edit</code>, <code>Save &amp; Test</code>를 통해 동작합니다. 해당 단계에서는 컨피그의 YAML 문법 오류와 컨피그의 기본적인 오류가 있는지를 체크합니다.  </p><p>정상적으로 테스트가 종료된 컨피그는 아래와 같이 테스트가 통과되면 임시로 저장되게 되고, 실제로 프로메테우스 클러스터에 적용이 되지 않은 상태입니다.</p><p><img alt="img" src="/assets/images/nc-config-test-3261c039984f31e12832489e0a042777.png"></p><p>테스트를 실패하는 경우를 살펴보겠습니다. 예를 들어 <code>global.scrape_timeout</code>의 경우 Second 단위(s)로 입력할 경우 60초를 초과하는 값을 입력하게 되면 비정상으로 간주되어 테스트가 실패하게 됩니다. 실패의 경우에는 관련 로그를 화면에 출력해서 보여주게 됩니다.  </p><p><img alt="img" src="/assets/images/nc-config-fail-34028126431ec999895104453cd0c769.png">  </p><p>컨피그에 문제가 없으면 <code>Apply &amp; Reload</code>를 통해 적용을 하고 프로메테우스 서비스를 재기동합니다.  </p><p><img alt="img" src="/assets/images/nc-config-reload-d37affec2cde679ef40662cffbf69f9f.png"></p><p>Alert Configuration도 위와 동일한 방법으로 설정 수정, 테스트 및 적용을 할 수 있습니다.  </p><p><img alt="img" src="/assets/images/nc-am-config-2bd709f300b049fe53f236e1d6ceff27.png"></p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/NexClipper/docs/edit/master/docs/start.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 40 40" class="iconEdit_2LL7"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#getting-started-with-nexclipper-cloud" class="table-of-contents__link">Getting Started with NexClipper Cloud</a><ul><li><a href="#overview" class="table-of-contents__link">Overview</a></li><li><a href="#minimum-requirements" class="table-of-contents__link">Minimum Requirements</a></li><li><a href="#installation" class="table-of-contents__link">Installation</a></li><li><a href="#kubernetes" class="table-of-contents__link">Kubernetes</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/start">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/">What is NexClipper?</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="http://nexclipper.slack.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Slack</a></li><li class="footer__item"><a href="https://twitter.com/nexclipper" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter</a></li><li class="footer__item"><a href="https://www.facebook.com/NexClipper/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/NexClipper/NexClipper" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 NexCloud, Inc. Built with Docusaurus.</div></div></div></footer></div>
-<script src="/styles.9a04161d.js"></script>
-<script src="/runtime~main.3399452a.js"></script>
-<script src="/main.f577c282.js"></script>
-<script src="/1.9cf54e17.js"></script>
-<script src="/2.053ed736.js"></script>
-<script src="/141.010058a5.js"></script>
-<script src="/144.e3e504f9.js"></script>
-<script src="/935f2afb.7636844a.js"></script>
-<script src="/17896441.236c65f5.js"></script>
-<script src="/98ce8162.ce019c31.js"></script>
+<script src="/styles.b2c46d75.js"></script>
+<script src="/runtime~main.80cf83b0.js"></script>
+<script src="/main.ce46df5d.js"></script>
+<script src="/1.76b3ffb4.js"></script>
+<script src="/2.017ba80c.js"></script>
+<script src="/143.84e25da1.js"></script>
+<script src="/146.f32fb5f5.js"></script>
+<script src="/935f2afb.b224196e.js"></script>
+<script src="/17896441.02c32073.js"></script>
+<script src="/98ce8162.f2463f09.js"></script>
 </body>
 </html>
