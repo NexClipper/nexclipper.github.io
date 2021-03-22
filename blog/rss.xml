@@ -8,9 +8,9 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Values of NexClipper]]></title>
+            <title><![CDATA[NexClipper의 가치]]></title>
             <link>https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper</link>
-            <guid>Values of NexClipper</guid>
+            <guid>NexClipper의 가치</guid>
             <pubDate>Mon, 22 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[NexClipper의 서비스 아이덴티티와 전달하고자 하는 가치]]></description>
         </item>
