@@ -59,7 +59,20 @@ NexClipper는 반복적 작업을 자동화하여 휴먼 에러를 방지할 수
 
 ## NexClipper의 기능
 
-NexClipper는 이런 부분을 프로메테우스를 포함한 클라우드 네이티브기반 관찰 가능성 에코시스템을 그대로 활용하면서 기존의 오픈소스 솔루션을 유지하면서도 새로운 편의 기능들을 추가하기 위해 아래와 같은 로드맵을 가지고 개발중입니다. 자세한 기능과 설명은 [홈페이지](https//nexclipper.io)를 참고하시기 바랍니다.  
+NexClipper는 이런 부분을 프로메테우스를 포함한 클라우드 네이티브기반 관찰 가능성 에코시스템을 그대로 활용하면서 기존의 오픈소스 솔루션을 유지하면서도 새로운 편의 기능들을 추가하기 위해 아래와 같은 기능들을 기반으로 개발중입니다. 자세한 설명은 [홈페이지](https//nexclipper.io)를 참고하시기 바랍니다.  
+
+#### [NexClipper](https://github.com/NexClipper/nexclipper)
+ - Metrics Pipeline for interoperability and Enterprise Prometheus
+####  [ExporterHub](https://github.com/NexClipper/exporterhub.io)
+ - A Curated List of Prometheus Exporters for the Best practice
+#### [Webstork](https://github.com/NexClipper/webstork)
+ - Web tunnel for Cloud-native application remote monitoring
+#### [Klevr](https://github.com/klevry/klevr)
+ - Hyper-connected Cloud-native delivery solution for SaaS
+#### [ProvBe](https://github.com/nexclipper/provbee)
+ - Provisioning All the platforms for Cloud-native
+#### [MetricArk](https://github.com/nexclipper/metricark)
+- Prometheus based status(State/Event/Metric) Composite API
 
 
 ## 정리
