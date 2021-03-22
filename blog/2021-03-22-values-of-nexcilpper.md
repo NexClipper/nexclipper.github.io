@@ -1,4 +1,3 @@
-
 ---
 title: "Values of NexClipper"
 author: Jinwoong Kim
