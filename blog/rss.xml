@@ -8,6 +8,13 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
+            <title><![CDATA[Values of NexClipper (Eng)]]></title>
+            <link>https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper-eng</link>
+            <guid>Values of NexClipper (Eng)</guid>
+            <pubDate>Mon, 22 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[NexClipper's Service Identity and Value to Delivery]]></description>
+        </item>
+        <item>
             <title><![CDATA[NexClipper의 가치]]></title>
             <link>https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper</link>
             <guid>NexClipper의 가치</guid>
@@ -197,18 +204,18 @@
             <description><![CDATA[By Kevin Ko , PhD, Data Scientist]]></description>
         </item>
         <item>
-            <title><![CDATA[NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.]]></title>
-            <link>https://nexclipper.github.io/blog/2018/07/11/nexclouds-nexclipper-was-selected-as-a-member-of-2018-gsip-by-nipa-of-korea</link>
-            <guid>NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.</guid>
-            <pubDate>Wed, 11 Jul 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[NexCloud's NexClipper was selected as a member of 2018 GSIP(Global SaaS Incubating Projects) by NIPA(National IT Industry Promotion Agency) of Korea.]]></description>
-        </item>
-        <item>
             <title><![CDATA[NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.]]></title>
             <link>https://nexclipper.github.io/blog/2018/07/11/nexcloudnexclippers-dc-os-on-premise-version-is-now-listed-on-dc-os-service-catalog</link>
             <guid>NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.</guid>
             <pubDate>Wed, 11 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.]]></title>
+            <link>https://nexclipper.github.io/blog/2018/07/11/nexclouds-nexclipper-was-selected-as-a-member-of-2018-gsip-by-nipa-of-korea</link>
+            <guid>NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.</guid>
+            <pubDate>Wed, 11 Jul 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[NexCloud's NexClipper was selected as a member of 2018 GSIP(Global SaaS Incubating Projects) by NIPA(National IT Industry Promotion Agency) of Korea.]]></description>
         </item>
         <item>
             <title><![CDATA[NexGate is NexCloud’s API Gateway made of NexEureka and NexZUUL]]></title>

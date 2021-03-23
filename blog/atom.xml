@@ -8,6 +8,13 @@
     <subtitle>NexClipper Blog</subtitle>
     <icon>https://nexclipper.github.io/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Values of NexClipper (Eng)]]></title>
+        <id>Values of NexClipper (Eng)</id>
+        <link href="https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper-eng"/>
+        <updated>2021-03-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexClipper's Service Identity and Value to Delivery]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[NexClipper의 가치]]></title>
         <id>NexClipper의 가치</id>
         <link href="https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper"/>
@@ -197,18 +204,18 @@
         <summary type="html"><![CDATA[By Kevin Ko , PhD, Data Scientist]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.]]></title>
-        <id>NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.</id>
-        <link href="https://nexclipper.github.io/blog/2018/07/11/nexclouds-nexclipper-was-selected-as-a-member-of-2018-gsip-by-nipa-of-korea"/>
-        <updated>2018-07-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[NexCloud's NexClipper was selected as a member of 2018 GSIP(Global SaaS Incubating Projects) by NIPA(National IT Industry Promotion Agency) of Korea.]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.]]></title>
         <id>NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.</id>
         <link href="https://nexclipper.github.io/blog/2018/07/11/nexcloudnexclippers-dc-os-on-premise-version-is-now-listed-on-dc-os-service-catalog"/>
         <updated>2018-07-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[NexCloud(NexClipper's DC/OS on-Premise version) is now listed on DC/OS service catalog.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.]]></title>
+        <id>NexCloud’s NexClipper was selected as a member of 2018 GSIP by NIPA of Korea.</id>
+        <link href="https://nexclipper.github.io/blog/2018/07/11/nexclouds-nexclipper-was-selected-as-a-member-of-2018-gsip-by-nipa-of-korea"/>
+        <updated>2018-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NexCloud's NexClipper was selected as a member of 2018 GSIP(Global SaaS Incubating Projects) by NIPA(National IT Industry Promotion Agency) of Korea.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[NexGate is NexCloud’s API Gateway made of NexEureka and NexZUUL]]></title>
