@@ -6,7 +6,6 @@ author_url: https://github.com/ddiiwoong
 author_image_url: https://avatars1.githubusercontent.com/u/37430952?v=4
 description: "NexClipper's Service Identity and Value to Delivery"
 tags: [Observability, NexClipper, Value]
-draft: true
 ---
 
 I had joined the NexClipper development team in April last year and have been developing NexClipper service since September. I'd like to talk about NexClipper, which is currently in progress to release version 0.5.  
@@ -85,5 +84,5 @@ Nexcloud is a container-based cloud technology company. For full-scale global bu
 
 #### [We're Hiring](https://www.notion.so/nexclipper/We-re-Hiring-c356a7b503d5403289bc3cf8ac20c6ea)
 
-Please give us various feedback on all of our technologies and products, including blogging, and if you have any questions or need any technical meetings, please contact us at [support@nexclipper.io](mailto:support@nexclipper.io) and we will reply to you as soon as soon as possible.
+Please give us various feedback on all of our technologies and products, including blog contents, and if you have any questions or need any technical meetings, please contact us at [support@nexclipper.io](mailto:support@nexclipper.io) and we will reply to you as soon as soon as possible.
 
