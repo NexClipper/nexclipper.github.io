@@ -50,15 +50,15 @@ The primary goal of NexClipper is to make it easy to set up and use the Observab
 
 NexClipper allows you to easily build a complex Observability open-source stack within your private cluster. In the Kubernetes open-source ecosystem, all open sources that need to be recorded, such as logs and events, including Prometheus, the most widely used metric-based monitoring solution in the environment, are easy to provision and operate with expert-like experience.
 
-### Managed Prometheus (Eliminates Cloud Vendor Lock-in Problems)
+### Managed Prometheus
 
 Nexclipper is based on an open source ecosystem, making them highly scalable, and allowing users to remove the limitation of vendor lock-in. It supports most existing public cloud environments, including AWS, based on dependency removal. Not only is it Self-build Kubernetes, but it also supports managed Kubernetes from a variety of CSPs.
 
-### Cost effective (Reduces human efforts and learning curve)
+### Cost effective
 
 NexClipper automates repetitive tasks to avoid human errors and reduces costs through reduced learning curves. You can work with UI-based dashboards with everything you need, including repetitive dashboard configurations, AlertRule, and Managed Service Discovery settings, and human errors can be reduced by utilizing the test feature.
 
-### Observe all of your data in single endpoint. (Global-View)
+### Observe all of your data in single endpoint
 
 By managing individual clusters and storing them in the Global-View cluster at the same time, it is possible to manage data for analysis. You can also monitor your existing deployed monitoring systems. In the event of a failure of the individual cluster monitoring stack itself, it can be monitored safely even if the notification is not delivered.
 
