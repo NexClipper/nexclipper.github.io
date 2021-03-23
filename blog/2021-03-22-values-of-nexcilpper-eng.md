@@ -58,7 +58,7 @@ NexClipper automates repetitive tasks to avoid human error and reduces costs thr
 ### Observe all of your data in single endpoint. (Global-View)
 Manage on a per-cluster basis and store in a Global-View cluster at the same time, enabling data management for analysis. You can also monitor your existing deployed monitoring systems. If the individual cluster monitoring stack itself is in a failure situation, it can be monitored safely even if the notification is not delivered.
 
-## Feature of NexClipper
+## Components of NexClipper
 
 NexClipper is developing on the following open-source base to add new convenience features while maintaining existing open-source solutions while leveraging the cloud native-based observability ecosystem, including Prometheus. Please refer to the homepage for detailed functions and descriptions.
 
