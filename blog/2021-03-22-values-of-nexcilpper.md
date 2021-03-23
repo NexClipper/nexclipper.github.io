@@ -45,7 +45,7 @@ tags: [Observability, NexClipper, Value]
 
 ## NexClipper의 가치
 
-### Make Observability Simply & Easily
+### Make Observability Simple & Easy
 NexClipper는 복잡하고 어려운 Observability 오픈소스 스택을 쉽고 간단하게 고객의 클러스터 내에 구축이 가능합니다. 쿠버네티스 오픈소스 생태계에서 환경에서 가장 널리 사용하는 메트릭(Metric) 기반 모니터링 솔루션인 프로메테우스(Prometheus)를 포함하여 기업에서 필요로하는 로그, 이벤트 등 기록이 필요한 모든 오픈소스를 쉽고 전문가의 도움과 유사한 경험으로 빠르고 쉽게 프로비저닝하고 운영하는 환경을 제공합니다.  
 
 ### Managed Prometheus (Eliminates Cloud Vendor Lock-in Problems)
