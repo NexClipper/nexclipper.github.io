@@ -55,7 +55,7 @@ Next, select a checkbox whether kubernetes environment or not. And click `Contin
 Run the generated script from zsh, bash-enabled Bastion, or Local. And you are expected to get results similar to the following.
 
 ```sh
-$ curl -sL gg.gg/provbee | K3S_SET=N K_API_KEY="ad08e31e576748d0a18a37ee1c1b4858" K_PLATFORM="kubernetes" K_MANAGER_URL="https://console.nexclipper.io:8090" K_ZONE_ID="413" K_CLUSTER_NAME="GLOBAL_VIEW" bash
+$ curl -sL gg.gg/provbee | K3S_SET=N K_API_KEY="<API_KEY_GENERATED>" K_PLATFORM="kubernetes" K_MANAGER_URL="https://console.nexclipper.io:8090" K_ZONE_ID="413" K_CLUSTER_NAME="GLOBAL_VIEW" bash
 NexClipper serivce first checking
 [INFO]   Welcome to NexClipper!
 namespace/nex-system created
