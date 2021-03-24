@@ -13,6 +13,7 @@ NexClipper runs in a Kubernetes environment.
 * Cluster Hardware
   * RAM: 4GB Minimum (Recommended 6GB)
   * CPU: 2Core Minimum
+  * Volume: 40Gi
 * Bastion Host : Linux(WSL included), MacOS 10.14+
 * Bastion Software
   * bash or zsh
