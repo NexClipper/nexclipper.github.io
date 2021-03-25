@@ -30,7 +30,7 @@ module.exports = {
         { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://console.nexclipper.io/login',
-          label: 'Login',
+          label: 'Get Started',
           position: 'right',
         },
         {

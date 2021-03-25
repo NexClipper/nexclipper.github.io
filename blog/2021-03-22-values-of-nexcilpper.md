@@ -48,13 +48,13 @@ tags: [Observability, NexClipper, Value]
 ### Make Observability Simple & Easy
 NexClipper는 복잡하고 어려운 Observability 오픈소스 스택을 쉽고 간단하게 고객의 클러스터 내에 구축이 가능합니다. 쿠버네티스 오픈소스 생태계에서 환경에서 가장 널리 사용하는 메트릭(Metric) 기반 모니터링 솔루션인 프로메테우스(Prometheus)를 포함하여 기업에서 필요로하는 로그, 이벤트 등 기록이 필요한 모든 오픈소스를 쉽고 전문가의 도움과 유사한 경험으로 빠르고 쉽게 프로비저닝하고 운영하는 환경을 제공합니다.  
 
-### Managed Prometheus (Eliminates Cloud Vendor Lock-in Problems)
+### Managed Prometheus
 오픈소스 생태계 기반으로 제공되어 확장성이 뛰어나고, 사용자는 벤더 락인이라는 제한사항을 제거할 수 있습니다. 종속성 제거를 바탕으로 AWS를 포함한 대부분의 존재하는 퍼블릭 Cloud 환경을 지원합니다. 구축형 Kubernetes 뿐 아니라 다양한 CSP에서 제공하는 Managed Kubernetes 를 지원합니다.
 
-### Cost effective (Reduce human efforts and learning curve)
+### Cost effective
 NexClipper는 반복적 작업을 자동화하여 휴먼 에러를 방지할 수 있고, 러닝 커브 감소를 통해 비용 절감이 가능합니다. 반복적인 대시보드 구성 및 AlertRule, 관리되는 Service Discovery 설정 등 운영에 필요한 모든 작업을 UI기반 대시보드에서 작업이 가능하고, 테스트 기능을 활용하여 작업 중 발생할 수 있는 휴먼 에러를 감소시킬 수 있습니다.  
 
-### Observe all of your data in single endpoint. (Global-View)
+### Observe all of your data in single endpoint
 개별 클러스터 별로 관리하면서 동시에 Global-View 클러스터에 저장함으로써, 분석을 위한 데이터 관리가 가능해집니다. 또한, 기존 구축된 모니터링 시스템을 모니터링할 수 있습니다. 개별 클러스트 모니터링 스택 자체가 장애 상황일 경우 알림이 전달되지 못하는 경우에도 안전하게 모니터링이 가능합니다.  
 
 ## NexClipper의 구성요소
@@ -78,6 +78,12 @@ NexClipper는 이런 부분을 프로메테우스를 포함한 클라우드 네�
 ## 정리
 
 NexClipper는 오픈소스 기반의 클라우드 네이티브 솔루션으로 프로메테우스를 포함한 Observability 스택의 쉬운 구축 운영과 엔터프라이즈 환경에서의 필요한 다양한 기능을 지원하는 “기업 고객을 위한 관리형 프로메테우스 서비스”입니다. 다음 포스팅에서는 NexClipper가 제공하는 기능과 특장점에 대해 설명할 예정입니다.  
+
+## 시작하기
+
+넥스클리퍼를 빠르고 쉽게 시작해보세요.  
+
+[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io/join)
 
 ## 넥스클라우드 소개
 

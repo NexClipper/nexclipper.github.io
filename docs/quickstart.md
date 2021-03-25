@@ -18,8 +18,7 @@ All resources run in the nex-system, nexclipper Namespace by default, and contai
 
 If you want to see the quick start run through video, check out below link:
 
-[![quick](http://img.youtube.com/vi/pGSjC2g2Hn0/0.jpg)](https://youtu.be/pGSjC2g2Hn0) 
-
+[![quick](http://img.youtube.com/vi/oywX6d3a5JM/0.jpg)](https://youtu.be/oywX6d3a5JM) 
 
 ---
 
@@ -72,7 +71,7 @@ Go to [https://console.nexclipper.io/login](https://console.nexclipper.io/login)
 Currently, we only support e-mail and Google Authentication (including GSuite). If you need to use NexClipper, please contact support@nexclipper.io.
 :::
 
-Now, Create Cluster and enter the unique cluster name you want. At QuickStart, you should select Kubernetes platform to provision.  
+Now, Create Cluster and select Kubernetes platform to provision. At QuickStart, you should enter Cluster Name you want. If you want to customize the cluster settings, turn on Advanced Mode toggle to set the details.  
 
 And bootstrap script will be created to install on the selected platform.
 
@@ -81,7 +80,7 @@ And bootstrap script will be created to install on the selected platform.
 Run the generated script from zsh, bash-enabled Bastion, or Local. And you are expected to get results similar to the following.  
 
 ```sh
-$ curl -sL gg.gg/provbee | TAGKLEVR=0.2.4-SNAPSHOT K3S_SET=N K_API_KEY="977b9d295d0f4273be3575cdaeae22b3" K_PLATFORM="kubernetes" K_MANAGER_URL="http://console.nexclipper.io:8090" K_ZONE_ID="62" bash
+$ curl -sL gg.gg/provbee | K3S_SET=N K_API_KEY="<API_KEY_GENERATED>" K_PLATFORM="kubernetes" K_MANAGER_URL="https://console.nexclipper.io:8090" K_ZONE_ID="415" K_CLUSTER_NAME="nexclipper_demo" bash
 NexClipper serivce first checking
 [INFO]   Welcome to NexClipper!
 namespace/nex-system created
@@ -92,10 +91,10 @@ configmap/nex-system-agent-config created
 role.rbac.authorization.k8s.io/nexclipper-role created
 clusterrolebinding.rbac.authorization.k8s.io/nexc-rbac created
 rolebinding.rbac.authorization.k8s.io/nexclipper-rb created
-Cluster "docker-desktop" set.
-User "nexc-nex-system-docker-desktop" set.
-Context "nexc-nex-system-docker-desktop" modified.
-Switched to context "nexc-nex-system-docker-desktop".
+Cluster "nexclipper.ap-northeast-2.eksctl.io" set.
+User "nexc-nex-system-nexclipper.ap-northeast-2.eksctl.io" set.
+Context "nexc-nex-system-nexclipper.ap-northeast-2.eksctl.io" modified.
+Switched to context "nexc-nex-system-nexclipper.ap-northeast-2.eksctl.io".
 secret/nexc-kubeconfig created
 service/provbee-service created
 deployment.apps/provbee created
@@ -154,4 +153,8 @@ You can view the information in the cluster.
 * API Server Status: Cluster API Server Status
 * API server total requests code: 5 minute average by Kubenetes API response code
 
-Other Features can be found through [here](installation)
+## Getting Started
+
+Get Started quickly and easily with NexClipper
+
+[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io/join)

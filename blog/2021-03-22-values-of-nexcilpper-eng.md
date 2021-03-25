@@ -1,5 +1,5 @@
 ---
-title: "Values of NexClipper (Eng)"
+title: "Values of NexClipper"
 author: Jinwoong Kim
 author_title: NexClipper
 author_url: https://github.com/ddiiwoong
@@ -93,6 +93,12 @@ NexClipper is developing on the following open-source base to add new convenienc
 ## Conclusion
 
 NexClipper is "Managed Prometheus service for enterprise customers" that composed of open-sources and cloud native solution. NexClipper enables easy deployment of the Observability stack, including Prometheus that supports the many capabilities needed in enterprise environments. In the next posting, we will describe the features and benefits of NexClipper.
+
+## Getting Started
+
+Get Started quickly and easily with NexClipper
+
+[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io/join)
 
 ## Introduction of NexClipper
 
