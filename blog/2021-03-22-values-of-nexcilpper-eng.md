@@ -98,7 +98,7 @@ NexClipper is "Managed Prometheus service for enterprise customers" that compose
 
 Get Started quickly and easily with NexClipper
 
-[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io/join)
+[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io)
 
 ## Introduction of NexClipper
 

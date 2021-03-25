@@ -157,4 +157,4 @@ You can view the information in the cluster.
 
 Get Started quickly and easily with NexClipper
 
-[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io/join)
+[![freetrial](../static/img/get-started-button.png)](https://console.nexclipper.io)

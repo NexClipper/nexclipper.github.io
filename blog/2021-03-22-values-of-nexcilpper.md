@@ -83,7 +83,7 @@ NexClipper는 오픈소스 기반의 클라우드 네이티브 솔루션으로 �
 
 넥스클리퍼를 빠르고 쉽게 시작해보세요.  
 
-[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io/join)
+[![freetrial ><](../static/img/get-started-button.png)](https://console.nexclipper.io)
 
 ## 넥스클라우드 소개
 
