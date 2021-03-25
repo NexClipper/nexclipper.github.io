@@ -1,6 +1,6 @@
 module.exports = {
   title: 'NexClipper',
-  tagline: 'Cloud Native infrastructure in an easier and more stable way.',
+  tagline: 'Managed Observability Platform At Anywhere.',
   url: 'https://nexclipper.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
