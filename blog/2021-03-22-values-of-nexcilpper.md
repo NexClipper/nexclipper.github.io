@@ -3,7 +3,7 @@ title: "NexClipper의 가치"
 author: Jinwoong Kim
 author_title: NexClipper
 author_url: https://github.com/ddiiwoong
-author_image_url: https://avatars1.githubusercontent.com/u/37430952?v=4
+author_image_url: https://github.com/NexClipper/NexClipper/blob/6d22befc40bdc4a49fb6cda16c1c52187f73c5c9/docs/img/logo1_wide.png
 description: "NexClipper의 서비스 아이덴티티와 전달하고자 하는 가치"
 tags: [Observability, NexClipper, Value]
 ---
