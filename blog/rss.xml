@@ -8,9 +8,9 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Values of NexClipper]]></title>
+            <title><![CDATA[Simple way to manage your observability stack with NexClipper]]></title>
             <link>https://nexclipper.github.io/blog/2021/03/22/values-of-nexcilpper-eng</link>
-            <guid>Values of NexClipper</guid>
+            <guid>Simple way to manage your observability stack with NexClipper</guid>
             <pubDate>Mon, 22 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[NexClipper's Service Identity and Value to Delivery]]></description>
         </item>
