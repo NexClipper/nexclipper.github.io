@@ -106,18 +106,18 @@
         <summary type="html"><![CDATA[Now back to Seoul, Korea, we would like to wrap up and share what we gained out of exhibition at KubeCon + CloudNativeCon North America 2019 - San Diego (Nov. 18-21, 2019).]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Report: NexClipper at PromCon EU 2019, Munich (Nov. 07-08, 2019)]]></title>
-        <id>Report: NexClipper at PromCon EU 2019, Munich (Nov. 07-08, 2019)</id>
-        <link href="https://nexclipper.github.io/blog/2019/11/15/report-nexclipper-at-promcon-eu-2019-munich-nov-07-08-2019"/>
-        <updated>2019-11-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We are now back to Seoul writing a brief post-event report on our attendance to PromCon EU 2019 held in Munich, on Nov. 07 & 08, 2019.]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Come Meet Us at KubeCon + CloudNativeCon North America - 2019, San Diego!]]></title>
         <id>Come Meet Us at KubeCon + CloudNativeCon North America - 2019, San Diego!</id>
         <link href="https://nexclipper.github.io/blog/2019/11/15/come-meet-us-at-kubecon-cloudnativecon-north-america-2019-san-diego"/>
         <updated>2019-11-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[NexClipper is exhibiting at KubeCon + CloudNativeCon North America - 2019 taking place at San Diego Convention Center throughout November 18 to 21, 2019 (we're only 3 nights away).]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Report: NexClipper at PromCon EU 2019, Munich (Nov. 07-08, 2019)]]></title>
+        <id>Report: NexClipper at PromCon EU 2019, Munich (Nov. 07-08, 2019)</id>
+        <link href="https://nexclipper.github.io/blog/2019/11/15/report-nexclipper-at-promcon-eu-2019-munich-nov-07-08-2019"/>
+        <updated>2019-11-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are now back to Seoul writing a brief post-event report on our attendance to PromCon EU 2019 held in Munich, on Nov. 07 & 08, 2019.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Meet NexClipper at PromCon EU 2019, Munich!]]></title>
@@ -141,18 +141,18 @@
         <summary type="html"><![CDATA[- 2,000+ Participated at the Event, Sharing Knowledge & Experience in Open Source]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Positive Impacts on Open Source in the Enterprise]]></title>
-        <id>The Positive Impacts on Open Source in the Enterprise</id>
-        <link href="https://nexclipper.github.io/blog/2019/03/20/the-positive-impacts-on-open-source-in-the-enterprise"/>
-        <updated>2019-03-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Come visit us at https://github.com/NexClipper/NexClipper]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Kubernetes Monitoring with NexClipper]]></title>
         <id>Kubernetes Monitoring with NexClipper</id>
         <link href="https://nexclipper.github.io/blog/2019/03/20/kubernetes-monitoring-with-nexclipper"/>
         <updated>2019-03-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Kubernetes Monitoring with NexClipper]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Positive Impacts on Open Source in the Enterprise]]></title>
+        <id>The Positive Impacts on Open Source in the Enterprise</id>
+        <link href="https://nexclipper.github.io/blog/2019/03/20/the-positive-impacts-on-open-source-in-the-enterprise"/>
+        <updated>2019-03-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Come visit us at https://github.com/NexClipper/NexClipper]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Concerns with Running Containers]]></title>
