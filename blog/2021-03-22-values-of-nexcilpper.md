@@ -69,7 +69,7 @@ NexClipper는 이런 부분을 프로메테우스를 포함한 클라우드 네�
  - Web tunnel for Cloud-native application remote monitoring
 #### [Klevr](https://github.com/klevry/klevr)
  - Hyper-connected Cloud-native delivery solution for SaaS
-#### [ProvBe](https://github.com/nexclipper/provbee)
+#### [ProvBee](https://github.com/nexclipper/provbee)
  - Provisioning All the platforms for Cloud-native
 #### [MetricArk](https://github.com/nexclipper/metricark)
 - Prometheus based status(State/Event/Metric) Composite API
