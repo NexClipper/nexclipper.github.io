@@ -2,8 +2,6 @@
 title: "Simple way to manage your observability stack with NexClipper"
 author: Jinwoong Kim
 author_title: NexClipper
-author_url: https://github.com/ddiiwoong
-author_image_url: https://raw.githubusercontent.com/NexClipper/nexclipper.github.io/master/blog/images/nexclipper_intro.png
 description: "NexClipper's Service Identity and Value to Delivery"
 tags: [Observability, NexClipper, Value]
 ---
