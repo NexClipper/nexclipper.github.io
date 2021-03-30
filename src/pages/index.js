@@ -62,7 +62,7 @@ function Home() {
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <h2 className="hero__subtitle">{siteConfig.tagline}</h2>
-          <p className="hero__subtitle">{siteConfig.customFields.tagdescription}</p>
+          <p className="hero__subtitle2">{siteConfig.customFields.tagdescription}</p>
           {/* <p className="hero__subtitle">{siteConfig.tagdescription}</p> */}
           <div className={styles.buttons}>
             <Link

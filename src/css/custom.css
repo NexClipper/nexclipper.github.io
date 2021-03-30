@@ -9,7 +9,6 @@
 /* You can override the default Infima variables here. */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-
 :root {
   --ifm-font-family-base: 'IBM Plex Sans';
   --ifm-color-primary: #006daa;
@@ -67,6 +66,15 @@ html[data-theme='dark'] .DocSearch {
 
 .header-github-link:hover {
   opacity: 0.6;
+}
+
+
+.hero__subtitle {
+  margin-bottom: 5px;
+}
+
+.hero__subtitle2 {
+  font-size: 1.5rem;
 }
 
 .header-github-link:before {
