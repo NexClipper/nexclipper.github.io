@@ -8,29 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Cloud Native',
+    title: 'Agnostic',
     imageUrl: 'img/cloudnative-2-200x200.png',
     description: (
       <>
-        A consolidated platform for Cloud Native Observability & Delivery
+        Manage and Control in any cloud or Kubernetes
       </>
     ),
   },
   {
-    title: 'Prometheus Ecosystem',
+    title: 'Managed',
     imageUrl: 'img/Prometheus_3d.png',
     description: (
       <>
-        Prometheus-based observability platform for any cloud native infrastructure
+        Easy to provision and use for prometheus ecosystem
       </>
     ),
   },
   {
-    title: 'Enterprise Architecture',
+    title: 'Secured',
     imageUrl: 'img/enterprisearchitecture-200x200.png',
     description: (
       <>
-        Manage Multi-Cluster & Multi-Tenancy Monitoring with Global Views and Limitless Metrics Retention
+        Provides secure data store in your cloud
       </>
     ),
   },
@@ -61,7 +61,9 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h2 className="hero__subtitle">{siteConfig.tagline}</h2>
+          <p className="hero__subtitle">{siteConfig.customFields.tagdescription}</p>
+          {/* <p className="hero__subtitle">{siteConfig.tagdescription}</p> */}
           <div className={styles.buttons}>
             <Link
               className={clsx(

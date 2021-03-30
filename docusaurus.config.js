@@ -1,6 +1,9 @@
 module.exports = {
   title: 'NexClipper',
-  tagline: 'Managed Observability Platform At Anywhere.',
+  tagline: 'Fully Managed Observability Service',
+  customFields: {
+    tagdescription: 'Easy of use and fast management for Prometheus cluster at any cloud, at scale',
+  },
   url: 'https://nexclipper.github.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',

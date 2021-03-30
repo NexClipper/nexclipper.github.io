@@ -8,7 +8,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Products',
+      label: 'Open Source',
       items: [
         {
           type: 'link',
