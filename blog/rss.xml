@@ -218,18 +218,18 @@
             <description><![CDATA[NexCloud's NexClipper was selected as a member of 2018 GSIP(Global SaaS Incubating Projects) by NIPA(National IT Industry Promotion Agency) of Korea.]]></description>
         </item>
         <item>
-            <title><![CDATA[Introducing how to monitor container in 5 minutes with NexClipper light]]></title>
-            <link>https://nexclipper.github.io/blog/2018/07/10/introducing-how-to-monitor-container-in-5-minutes-with-nexclipper-light</link>
-            <guid>Introducing how to monitor container in 5 minutes with NexClipper light</guid>
-            <pubDate>Tue, 10 Jul 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[What is NexClipper?]]></description>
-        </item>
-        <item>
             <title><![CDATA[NexGate is NexCloud’s API Gateway made of NexEureka and NexZUUL]]></title>
             <link>https://nexclipper.github.io/blog/2018/07/10/bitcoin-surges</link>
             <guid>NexGate is NexCloud’s API Gateway made of NexEureka and NexZUUL</guid>
             <pubDate>Tue, 10 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[NexGate]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Introducing how to monitor container in 5 minutes with NexClipper light]]></title>
+            <link>https://nexclipper.github.io/blog/2018/07/10/introducing-how-to-monitor-container-in-5-minutes-with-nexclipper-light</link>
+            <guid>Introducing how to monitor container in 5 minutes with NexClipper light</guid>
+            <pubDate>Tue, 10 Jul 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[What is NexClipper?]]></description>
         </item>
     </channel>
 </rss>
