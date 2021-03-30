@@ -7,7 +7,7 @@ description:
 
 ## Edit & Unit Test for Prometheus Config
 
-Click on `Config` under Prometheus to modify the configuration in the currently provisioned state. It allows you to edit config and rules(alert, recording) on the editor screen. And you can use the `promtool test` to determine whether there is a problem with the unit test. If there is no problem, just save and apply it. 
+Click on `Prometheus Config` under Prometheus to modify the configuration in the currently provisioned state. It allows you to edit config and rules(alert, recording) on the editor screen. And you can use the `promtool test` to determine whether there is a problem with the unit test. If there is no problem, just save and apply it. 
 
 ![img](../static/img/nc-prom-config.png)
 
