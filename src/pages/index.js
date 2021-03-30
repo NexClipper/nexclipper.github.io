@@ -71,7 +71,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/quickstart/')}>
-              Get Started
+              Quick Start
             </Link>
           </div>
         </div>
