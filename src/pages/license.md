@@ -1,7 +1,6 @@
 ---
 id: license
 title: compliance
-hide_title: true
 hide_table_of_contents: true
 description: license compliance of nexclipper
 ---

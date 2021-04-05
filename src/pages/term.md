@@ -1,10 +1,11 @@
 ---
 id: term
 title: Term of Use
-hide_title: true
 hide_table_of_contents: true
 description: Term of Use
 ---
+
+# Term of Use
 
 ## 1.Purpose
 
@@ -20,13 +21,13 @@ Please note that these terms written in English are just for reference ONLY, for
 
 2.3.NexCloud may modify these terms if there’s justifiable reasons, and if any changes are made by NexCloud, NexCloud is responsible for making a disclosure. Except any changes in important terms such as your rights or responsibilities regarding subscription fees, it shall be effective after seven (7) days once a disclosure is made.
 
-3.Applications of Terms
+## 3.Applications of Terms
 
 Any matters not specified in these terms shall be considered and applied in accordance with applicable laws, the intent of these terms, and practices of the same or similar industry.
 
 2.The Conclusion of Contracts 
 
-4.Establishment of Contracts
+## 4.Establishment of Contracts
 
 The service contract shall be established by NexCloud’s approvals to your application for service including your consent to NexCloud’s terms.
 
@@ -37,8 +38,7 @@ The service contract shall be established by NexCloud’s approvals to your appl
 3)You may apply for service on NexCloud’s official website.
 
  
-
-5. Approvals for Application for Service
+## 5. Approvals for Application for Service
 
 5.1. NexCloud may approve your application of use unless you don’t have business related or technical issues.
 
@@ -64,7 +64,7 @@ The service contract shall be established by NexCloud’s approvals to your appl
 
 3.Contract Modification and Termination 
 
-6. Contract Modification
+## 6. Contract Modification
 
 6.1. If you are applicable any changes in terms listed in below, you should update your information on NexCloud’s official website. (https://www.nexclipper.io)
 
@@ -76,11 +76,11 @@ The service contract shall be established by NexCloud’s approvals to your appl
 
 6.2.In accordance with Article1, subparagraph 2, in case of service modification, service fees will be charged based on a new service contract.
 
-7.Contract Renew
+## 7.Contract Renew
 
 The service period shall be every month from the first date of your service to the end of the month. If there is no separate agreement between you and NexCloud within the service period, the service automatically extends for one month on the same terms as the previous contract.
 
-8.Assignment
+## 8.Assignment
 
 8.1. Any rights and licenses may not be transferred or assigned by you unless you obtained written consent from NexCloud.
 
@@ -89,8 +89,7 @@ The service period shall be every month from the first date of your service to t
 8.3. In case the transfer of your status has occurred by mergers, divisions, or transfer of business, it is your responsibility to inform NexCloud the reasons for the transfer of your status with documents that proves the transfer of your status, a copy of business license (corporate only) within thirty (30) days.
 
  
-
-9.Termination
+## 9.Termination
 
 9.1. If terms of service are terminated, fees will be charged based on from the effective date of service to the end of use. It will be prorated based on the first day of service and last day of service (your actual signup date)
 
@@ -108,7 +107,7 @@ The service period shall be every month from the first date of your service to t
 
 9.8. Under article 17 of the E-commerce Act, any remorse return or a mistaken purchase cannot be withdrawn after thirty (30) days of application for a service or products submitted. If there’s a critical issues or problems on your use, it will be handled by the Electronic Commerce Act and the consumer dispute resolution standards (notify the Fair Trade Commission)
 
-10.Deprivation of Rights or License
+## 10.Deprivation of Rights or License
 
 If you are applicable for any of the case listed below, NexCloud may terminate your service.
 
@@ -129,20 +128,18 @@ If you are applicable for any of the case listed below, NexCloud may terminate y
 8) Application for service was submitted by users who previous removed or banned from NexCloud.
 
  
-
-11. Service Fee
+## 11. Service Fee
 
 NexCloud shall clearly state service fee and any specifics on NexCloud’s official website. (https://www.nexclipper.io)
 
  
-
-12. Service Fee Modification
+## 12. Service Fee Modification
 
 12.1. Service fee change means fees increase or decrease, it applies to you the following month after NexCloud notice you the changes. If the period of contract is already fixed or service is already prepaid to NexCloud, you may not change the fee unless service fees decrease.
 
 12.2. NexCloud has a responsibility to the reasons of service fee change referred to 1, on NexCloud’s official website.
 
-13. Compensation for Damages
+## 13. Compensation for Damages
 
 Service is not provided to you more than three (3) days due to NexCloud’s fault, the service fee will be discounted. The discounts shall be the amount that average of the most recent monthly fee multiply by the number of days when service is unavailable.
 
@@ -155,8 +152,7 @@ Service is not provided to you more than three (3) days due to NexCloud’s faul
 13.4. In no event shall NexCloud’s cumulative and aggregate liability under these terms exceed service fees that NexCloud offers.
 
  
-
-14. Indemnity
+## 14. Indemnity
 
 14.1. NexCloud is not liable for any of your activities or results that cause damage, loss, illegal activities, and any civil and criminal liability and compensation. Your use of the NexCloud is at your own risk.
 
@@ -170,16 +166,15 @@ Service is not provided to you more than three (3) days due to NexCloud’s faul
 
 14.6. NexCloud assumes no liability or responsibility for any service and software provided by NexCloud.
 
-15.The Effectiveness of Terms
+## 15.The Effectiveness of Terms
 
 When you apply for service, NexCloud grants a license to you, this agreement shall be effective.
 
-16. A Competent Court
+## 16. A Competent Court
 
 16.1. Except specified in the terms, general practices and contingency act shall be followed and interpretation of terms or conflict over proper fulfillment of the terms shall be resolved by agreement between you and NexCloud.
 
 16.2. If the agreement is not established, it will be dealt with a court that in charge of where NexCloud is located.
-
  
 
 These terms are effective as of August 1. 2018
