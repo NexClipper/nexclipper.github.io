@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{97:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cloud-native-con-north-america-2019","name":"cloudnativecon north america 2019","count":2,"permalink":"/blog/tags/cloud-native-con-north-america-2019"}')}}]);
