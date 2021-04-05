@@ -2,6 +2,7 @@
 id: privacy
 title: Privacy Policy
 hide_title: true
+hide_table_of_contents: true
 description: Privacy Policy of nexclipper
 ---
 
