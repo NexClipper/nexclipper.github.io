@@ -94,7 +94,7 @@ module.exports = {
               href: 'https://github.com/NexClipper/NexClipper',
             },
             {
-              label: 'License Compliance',
+              label: 'Open Source License',
               to: 'license',
             },
           ],
