@@ -93,6 +93,10 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/NexClipper/NexClipper',
             },
+            {
+              label: 'License Compliance',
+              to: 'license',
+            },
           ],
         },
       ],
