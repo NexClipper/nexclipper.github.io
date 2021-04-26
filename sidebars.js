@@ -4,7 +4,7 @@ module.exports = {
       'Documentation': ['intro','quickstart'],
     },
     {
-      'Guide': ['components', 'requirements', 'requirements_instance', 'health', 'config', 'alert', 'globalview','clean'],
+      'Guide': ['components', 'requirements', 'requirements_instance', 'health', 'config', 'alert', 'globalview','logging','clean'],
     },
     {
       type: 'category',
