@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[90],{162:function(o){o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"dc-os","name":"dc/os","count":1,"permalink":"/blog/tags/dc-os"}')}}]);
