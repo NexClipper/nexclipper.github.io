@@ -8,6 +8,9 @@ description: license compliance of NexClipper
 ## License Compliance
 To comply with the license, we will disclose the source code of NexClipper products using open source.
 
+## Helm Charts
+https://nexclipper.github.io/helm-charts/
+
 ## Open Source
 |Open Source      |Used                   |Purpose                   |License             |
 |-----------------|-----------------------|----------------------------------------|--------------------|
@@ -16,7 +19,7 @@ To comply with the license, we will disclose the source code of NexClipper produ
 |[K3S](https://github.com/k3s-io/k3s)            |Provbee             |Lightweight Kubernetes                                              |Apache-2.0 License  |
 |[Multipass](https://github.com/canonical/multipass)        |Provbee             |End user Dev/Test environment - for Hosted VM                       |AGPL-3.0 License    |
 |[Libvirt](https://github.com/libvirt/libvirt)         |Provbee             |End user Dev/Test environment -  for Bare-metal                     |LGPL-2.1 License    |
-|[grafana](https://github.com/grafana/grafana)          |NexClipper platform |data visualization platform                                         |Apache-2.0 License  |
+|[grafana](https://github.com/grafana/grafana)          |NexClipper platform |data visualization platform                                         |AGPL-3.0 License  |
 |[terraform](https://github.com/hashicorp/terraform)        |Provbee             |CSP infra handling                                                  |MPL-2.0 License     |
 |[tobs](https://github.com/timescale/tobs)             |Provbee             |The Observability Stack for Kubernetes                              |Apache-2.0 License  |
 |[MariaDB](https://mariadb.org/)          |NexClipper, Klevr   |Database                                                            |GNU GPL 2 license   |
