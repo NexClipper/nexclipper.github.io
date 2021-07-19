@@ -21,5 +21,5 @@ After several steps including consent, you can delete a cluster.
 To delete NexClipper Suite completely, run the following script.
 
 ```sh
-curl -sL http://gg.gg/provbee-seeyou | NEXNS=nexclipper DEL=Y bash
+curl -sL http://install.p8s.me/provbee-seeyou | NEXNS=nexclipper DEL=Y bash
 ```
